@@ -1,0 +1,178 @@
+.aboutSectionContainer {
+  width: 100%;
+  display: flex;
+}
+.aboutSectionLeftDiv {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+}
+.aboutSectionImageDiv {
+  width: 70%;
+  padding: 10% 0;
+  display: flex;
+  justify-content: center;
+}
+.aboutSectionImageDiv img {
+  width: 80%;
+}
+.aboutSectionRightDiv {
+  width: 55%;
+  /* background: #f7c844; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.aboutSectionTextDiv {
+  width: 80%;
+  padding: 0 5%;
+}
+.aboutSectionTitleDiv {
+  display: flex;
+  align-items: center;
+  margin: 2% 0;
+}
+.aboutSectionTitleDivider {
+  width: 10%;
+  height: 3px;
+  margin-right: 2%;
+}
+.aboutSectionTitle {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.aboutSectionSubTitle {
+  color: #fbfbfb;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.aboutSectionDesp {
+  color: #fbfbfb;
+  font-weight: 400;
+  width: 60%;
+  margin: 2% 0;
+  opacity: 0.8;
+}
+.aboutSectionButtonDiv {
+  background: #fbfbfb;
+  padding: 1% 3%;
+  border-radius: 40px;
+  margin-top: 5%;
+  width: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.aboutSectionButton {
+  border: none;
+  background: transparent;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  width: 80%;
+}
+
+.aboutSectionBgTitle {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutSectionButtonDiv img {
+  width: 20%;
+}
+@media only screen and (max-width: 1660px) {
+  .aboutSectionButtonDiv {
+    padding: 1.5% 3%;
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .aboutSectionImageDiv img {
+    width: 100%;
+  }
+  .aboutSectionTitle {
+    font-size: 1.4rem;
+  }
+  .aboutSectionSubTitle {
+    font-size: 2.2rem;
+  }
+  .aboutSectionDesp {
+    width: 80%;
+  }
+  .aboutSectionButtonDiv {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1112px) {
+  .aboutSectionDesp {
+    width: 90%;
+  }
+  .aboutSectionButtonDiv {
+    width: 35%;
+  }
+  .aboutSectionBgTitle {
+    padding: 2% 0;
+  }
+  .aboutSectionBgTitle img {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .aboutSectionContainer {
+    flex-direction: column-reverse;
+  }
+  .aboutSectionLeftDiv {
+    width: 100%;
+  }
+  .aboutSectionImageDiv img {
+    width: 80%;
+  }
+  .aboutSectionRightDiv {
+    width: 100%;
+  }
+
+  .aboutSectionBgTitle img {
+    width: 50%;
+  }
+  .aboutSectionTitle {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .aboutSectionDesp {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .aboutSectionBgTitle {
+    display: none;
+  }
+  .aboutSectionTextDiv {
+    width: 100%;
+    padding: 5%;
+  }
+  .aboutSectionImageDiv {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .aboutSectionImageDiv img {
+    width: 100%;
+  }
+  .aboutSectionSubTitle {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .aboutSectionButtonDiv {
+    width: 45%;
+  }
+  .aboutSectionTextDiv {
+    padding: 5%;
+  }
+}

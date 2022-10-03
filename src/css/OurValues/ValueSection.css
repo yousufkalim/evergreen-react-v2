@@ -1,0 +1,186 @@
+.valuesSectionContainer {
+  width: 100%;
+  display: flex;
+  /* flex-direction: row-reverse; */
+}
+.valuesSectionContainerReverse {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.valuesSectionImgDiv {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.valuesSectionImgDivReverse {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5%;
+  align-items: center;
+}
+.valuesSectionImgDiv img {
+  width: 70%;
+}
+.valuesSectionImgDivReverse img {
+  width: 70%;
+}
+.valuesSectionTextContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.valuesSectionTextContainerReverse {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0 5% 13%;
+}
+
+.valuesSectionTextDiv {
+  width: 100%;
+}
+.valuesSectionTextDivReverse {
+  width: 100%;
+}
+.valuesSectionSubTitleDiv {
+  display: flex;
+  align-items: center;
+}
+.valuesSectionSubTitleDivReverse {
+  display: flex;
+  align-items: center;
+}
+.valuesSectionSubTitleDivider {
+  height: 3px;
+  width: 10%;
+  background: #f7c844;
+  margin-right: 1%;
+}
+.valuesSectionSubTitleDividerReverse {
+  height: 3px;
+  width: 10%;
+  background: #f7c844;
+  margin-right: 1%;
+}
+.valuesSectionSubTitle {
+  color: #f7c844;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.valuesSectionTitle {
+  color: #1e1e1e;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 3% 0;
+}
+.valuesSectionDespDiv {
+  width: 80%;
+}
+.valuesSectionDespDiv p {
+  color: #b7b7b7;
+  font-weight: 400;
+}
+.valuesSectionDespDivReverse {
+  width: 80%;
+}
+.valuesSectionDespDivReverse p {
+  color: #b7b7b7;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1024px) {
+  .valuesSectionSubTitle {
+    font-size: 1rem;
+  }
+  .valuesSectionTitle {
+    font-size: 2rem;
+  }
+  .valuesSectionDespDiv {
+    width: 95%;
+  }
+  .valuesSectionDespDiv p {
+    font-size: 0.9rem !important;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .valuesSectionContainer {
+    flex-direction: column-reverse;
+    padding: 5% 0;
+  }
+  .valuesSectionContainerReverse {
+    flex-direction: column-reverse;
+    padding: 5% 0;
+  }
+  .valuesSectionTextDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .valuesSectionSubTitleDiv {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .valuesSectionSubTitleDivider {
+    width: 10%;
+  }
+  .valuesSectionSubTitle {
+    font-size: 1.3rem;
+  }
+  .valuesSectionDespDiv {
+    width: 80%;
+    text-align: right;
+  }
+  .valuesSectionDespDiv p {
+    font-size: 0.9rem !important;
+  }
+  .valuesSectionDespDivReverse p {
+    font-size: 0.9rem !important;
+  }
+  .valuesSectionImgDiv {
+    width: 100%;
+  }
+
+  .valuesSectionImgDivReverse {
+    width: 100%;
+    padding-left: 0%;
+    justify-content: center;
+  }
+  .valuesSectionTextContainer {
+    width: 100%;
+    padding: 5% 10%;
+  }
+
+  .valuesSectionTextContainerReverse {
+    width: 100%;
+    padding: 5% 10%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .valuesSectionDespDiv {
+    width: 90%;
+  }
+  .valuesSectionDespDivReverse {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .valuesSectionTitle {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .valuesSectionDespDiv {
+    width: 100%;
+  }
+  .valuesSectionDespDivReverse {
+    width: 100%;
+  }
+}

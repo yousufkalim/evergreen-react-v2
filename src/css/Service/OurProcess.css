@@ -1,0 +1,103 @@
+.OurProcessContainer {
+  width: 100%;
+  display: flex;
+  background: #1e1e1e;
+  padding: 5% 3% 5% 10%;
+}
+.OurProcessLeftDiv {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.OurProcessTitleDiv {
+  display: flex;
+  align-items: center;
+}
+.OurProcessTitleDivider {
+  height: 3px;
+  width: 5%;
+  background: #f7c844;
+  margin-right: 2%;
+}
+.OurProcessTitle {
+  color: #f7c844;
+  font-weight: 600;
+  line-height: 174.5%;
+  font-size: 1.2rem;
+}
+.OurProcessSubTitle {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.3rem;
+  margin: 2% 0;
+}
+.OurProcessImageDiv {
+  width: 100%;
+  margin: 7% 0 3% 0;
+}
+.OurProcessImageDiv img {
+  width: 80%;
+}
+.OurProcessRightDiv {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+.OurProcessRightDiv img {
+  width: 60%;
+}
+@media only screen and (max-width: 1660px) {
+  .OurProcessContainer {
+    padding: 5% 3% 5% 5%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .OurProcessSubTitle {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .OurProcessContainer {
+    padding: 5%;
+  }
+  .OurProcessRightDiv {
+    display: none;
+  }
+  .OurProcessLeftDiv {
+    width: 100%;
+  }
+  .OurProcessTitle {
+    font-size: 1rem;
+  }
+  .OurProcessSubTitle {
+    font-size: 1.7rem;
+  }
+  .OurProcessImageDiv img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .OurProcessTitle {
+    font-size: 1rem;
+  }
+  .OurProcessSubTitle {
+    font-size: 1.5rem;
+  }
+  .OurProcessImageDiv img {
+    padding: 1% 2%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .OurProcessTitle {
+    font-size: 0.9rem;
+  }
+  .OurProcessSubTitle {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .OurProcessTitleDivider {
+    display: none;
+  }
+}

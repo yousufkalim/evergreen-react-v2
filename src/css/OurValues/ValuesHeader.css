@@ -1,0 +1,50 @@
+.OurValuesContainer {
+  /* height: 100vh; */
+  background: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 5% 0 5%;
+  position: relative;
+  /* background-image: url(../../assets/Images/values_header_bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw; */
+  /* overflow: hidden; */
+}
+.OurValuesBgImage {
+  object-fit: cover;
+  width: 100%;
+}
+.OurValuesTitleDiv {
+  position: absolute;
+  top: 35%;
+  right: 43%;
+}
+.OurValuesTitleDiv h2 {
+  color: #f8f8f8;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.OurValuesTitleDiv h2 span {
+  color: #f7c844;
+}
+@media only screen and (max-width: 1366px) {
+  .OurValuesTitleDiv {
+    right: 40%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .OurValuesTitleDiv {
+    right: 32%;
+  }
+  .OurValuesTitleDiv h2 {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .OurValuesTitleDiv {
+    right: 30%;
+  }
+}

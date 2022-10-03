@@ -1,0 +1,50 @@
+.sectionHeaderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.sectionHeaderContainer p {
+  color: #f7c844;
+  font-weight: 600;
+}
+.sectionHeaderContainer h2 {
+  color: #1e1e1e;
+  font-weight: 500;
+  font-size: 1.5rem;
+  width: 30%;
+  padding: 0.5% 0;
+}
+.sectionHeaderTitleDiv {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.sectionHeaderTitleDivider {
+  height: 3px;
+  width: 2%;
+  margin-right: 1%;
+  background: #f7c844;
+}
+
+@media only screen and (max-width: 1366px) {
+  .sectionHeaderContainer h2 {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .sectionHeaderContainer {
+    margin: 3% 0;
+  }
+  .sectionHeaderContainer h2 {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sectionHeaderContainer h2 {
+    width: 90%;
+  }
+}

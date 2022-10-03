@@ -1,0 +1,243 @@
+.navbarContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 10%;
+  position: fixed;
+  background: transparent;
+  /* background-color: var(--primary); */
+  /* box-shadow: 0px 5px 28px -2px rgba(0, 0, 0, 0.2); */
+  z-index: 999999999;
+}
+.navbarLogoDiv {
+  width: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbarLogo {
+  width: 100%;
+}
+.navbarMenuContainer {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbarMenuDiv {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  color: #b7b7b7;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.navbarMenuServiveDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b7b7b7;
+  text-decoration: none;
+}
+.navbarMenuServiveIcon {
+  margin-left: 8%;
+}
+.navbarMenuServiveDropdown {
+  position: relative;
+}
+#a {
+  position: absolute;
+  width: 250px;
+  height: 0px;
+  transition: 0.5s;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.navbarMenuServiveDropdown:hover #a {
+  height: 200px;
+  /* overflow: visible; */
+}
+.navbarButtonContainer {
+  width: 10%;
+  background: #f7c844;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 0.6% 1%;
+  cursor: pointer;
+  text-decoration: none;
+}
+.navbarButton {
+  width: 100%;
+  background: #f7c844;
+  border: none;
+  font-size: 1.1rem;
+}
+.navbarButtonIcon {
+  width: 20%;
+}
+#navbarToggleDiv {
+  display: none;
+}
+/* 
+ */
+.container {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  right: 5%;
+  top: 1.5%;
+  z-index: 999999999 !important;
+}
+.change {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  right: 5%;
+  top: 1.5%;
+  z-index: 999999999 !important;
+  cursor: pointer;
+}
+
+.bar1 {
+  width: 10px;
+  margin: 4px 0;
+  height: 3px;
+  background-color: #f7c844;
+  transition: 0.4s;
+}
+.bar2 {
+  width: 25px;
+  margin: 4px 0;
+  height: 3px;
+  background-color: #f7c844;
+  transition: 0.4s;
+}
+.bar3 {
+  width: 25px;
+  margin: 4px 0;
+  height: 3px;
+  transition: 0.4s;
+  display: flex;
+  justify-content: flex-end;
+}
+.abc {
+  width: 15px;
+  background-color: #f7c844;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-1px, -1px);
+  transform: rotate(-45deg) translate(-1px, -1px);
+  width: 25px;
+  background-color: #ffffff;
+  position: fixed;
+  right: 5%;
+  top: 2.5%;
+  z-index: 999999999 !important;
+  cursor: pointer;
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-1px, 1px);
+  transform: rotate(45deg) translate(-1px, 1px);
+  position: fixed;
+  right: 5%;
+  top: 2.5%;
+  cursor: pointer;
+
+  z-index: 999999999 !important;
+}
+.change .abc {
+  width: 25px;
+  background-color: #ffffff;
+}
+.css-10hburv-MuiTypography-root {
+  font-size: 1.5rem !important;
+}
+.navbarMobMenuDiv {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: #1e1e1e;
+  z-index: 999;
+  padding-top: 10%;
+}
+.navbarMobMenuLink {
+  width: 100%;
+  text-decoration: none;
+  color: #b7b7b7;
+}
+@media only screen and (max-width: 1660px) {
+  .navbarContainer {
+    padding: 1.5% 5% 1% 5%;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .navbarMenuContainer {
+    width: 73%;
+  }
+  .navbarButtonContainer {
+    width: 12%;
+  }
+}
+@media only screen and (max-width: 1112px) {
+  .navbarMenuDiv {
+    width: 70%;
+    font-size: 1rem;
+  }
+  /* .navbarButtonContainer {
+    width: 12%;
+  } */
+  .navbarButton {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .navbarContainer {
+    padding: 2% 5% 1% 5%;
+  }
+  .navbarMenuDiv {
+    width: 75%;
+    font-size: 0.9rem;
+  }
+  .navbarButtonContainer {
+    width: 15%;
+  }
+  .navbarLogoDiv {
+    width: 15%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbarLogoDiv {
+    width: 20%;
+    padding-top: 1%;
+  }
+  .navbarMenuContainer {
+    display: none;
+  }
+  .navbarButtonContainer {
+    display: none;
+  }
+  #navbarToggleDiv {
+    display: block;
+  }
+  #Mob_items {
+    font-size: 1.5rem !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navbarLogoDiv {
+    width: 30%;
+    padding-top: 2%;
+  }
+  .navbarMobMenuDiv {
+    padding-top: 12%;
+  }
+}

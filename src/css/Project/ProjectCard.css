@@ -1,0 +1,184 @@
+.projectCardContainer {
+  width: 100%;
+  height: 100%;
+  /* margin-bottom: -8px; */
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.projectCardContainerLeft {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -8px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.projectCardHoverDiv {
+  position: absolute;
+  width: 50%;
+  background: #f7c844;
+  opacity: 0.9;
+  height: 100%;
+  padding: 5%;
+}
+.projectCardTextDiv {
+  margin: 5% 0;
+}
+.projectCardNumberDiv {
+  display: flex;
+  align-items: center;
+}
+.projectCardDivider {
+  height: 3px;
+  width: 8%;
+  background: #fbfbfb;
+  margin-right: 2%;
+}
+.projectCardNumber {
+  color: #fbfbfb;
+  font-size: 1.2rem;
+}
+.projectCardTitle {
+  color: #fbfbfb;
+  margin: 3% 0;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+.projectCardDesp {
+  color: #fbfbfb;
+  font-weight: 400;
+  width: 80%;
+}
+.projectCardBtnDiv {
+  background: #fbfbfb;
+  padding: 1.5% 3%;
+  border-radius: 40px;
+  margin-top: 10%;
+  width: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.projectCardBtnDiv img {
+  width: 20%;
+}
+.projectCardBtn {
+  border: none;
+  background: transparent;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  width: 80%;
+}
+.projectCardBgImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 1500px) {
+  .projectCardBtnDiv {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .projectCardTitle {
+    font-size: 2rem;
+  }
+  .projectCardDesp {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .projectCardTitle {
+    font-size: 1.5rem;
+  }
+  .projectCardDesp {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .projectCardHoverDiv {
+    padding: 3% 5%;
+  }
+  .projectCardBtnDiv {
+    margin-top: 5%;
+    width: 35%;
+  }
+  .projectCardDesp {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .projectCardContainer {
+    flex-direction: column;
+  }
+  .projectCardContainerLeft {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+
+  .projectCardHoverDiv {
+    position: relative;
+    padding: 5%;
+    width: 100%;
+    opacity: 1;
+  }
+  .projectCardTitle {
+    font-size: 2rem;
+  }
+  .projectCardBtnDiv {
+    width: 25%;
+  }
+  .projectCardDesp {
+    width: 70%;
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .projectCardDesp {
+    width: 90%;
+  }
+  .projectCardHoverDiv {
+    padding: 10% 5%;
+  }
+  .projectCardBgImage {
+    object-fit: none;
+    width: 800px;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .projectCardHoverDiv {
+    padding: 15% 5%;
+  }
+  .projectCardTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .projectCardDesp {
+    width: 95%;
+  }
+  .projectCardBgImage {
+    width: 600px;
+    height: 400px;
+  }
+  .projectCardBtnDiv {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .projectCardBtnDiv {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .projectCardBtnDiv {
+    width: 50%;
+  }
+}

@@ -1,14 +1,31 @@
 /* Importing all CSS files */
-@import url("./Header.css");
+@import url('./Common/Navbar.css');
+@import url('./Home/Header.css');
+@import url('./Common/SectionHeader.css');
+@import url('./Common/ServiceProvidedCard.css');
+@import url('./Common/PartnerSection.css');
+@import url('./Common/AboutSection.css');
+@import url('./Service/AboutService.css');
+@import url('./Service/OurProcess.css');
+@import url('./Service/ServiceHeader.css');
+@import url('./Common/ContactSection.css');
+@import url('./Project/ProjectCard.css');
+@import url('./Common/Footer.css');
+@import url('./About/AboutHeader.css');
+@import url('./OurValues/ValuesHeader.css');
+@import url('./OurValues/ValueSection.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Defaults */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 /* Primary Variables */
 :root {
-  --primary: "green";
+  --primary: green;
+  --secondary: red;
 }

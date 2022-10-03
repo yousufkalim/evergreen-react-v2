@@ -1,0 +1,185 @@
+.aboutServiceContainer {
+  width: 100%;
+  display: flex;
+}
+.aboutServiceLeftDiv {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+}
+.aboutServiceImageDiv {
+  width: 80%;
+  padding: 10% 0;
+  display: flex;
+  justify-content: center;
+}
+.aboutServiceImageDiv img {
+  width: 80%;
+}
+.aboutServiceRightDiv {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.aboutServiceTextDiv {
+  width: 100%;
+  padding: 0 5%;
+}
+.aboutServiceTitleDiv {
+  display: flex;
+  align-items: center;
+  margin: 2% 0;
+}
+.aboutServiceTitleDivider {
+  width: 10%;
+  height: 3px;
+  background: #f7c844;
+  margin-right: 2%;
+}
+.aboutServiceTitle {
+  color: #f7c844;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.aboutServiceSubTitle {
+  color: #1e1e1e;
+  font-weight: 500;
+  font-size: 2rem;
+  width: 40%;
+}
+.aboutServiceDesp {
+  color: #b7b7b7;
+  font-weight: 400;
+  width: 60%;
+  margin: 2% 0;
+  opacity: 0.8;
+}
+.aboutServiceButtonDiv {
+  background: #f7c844;
+  padding: 1% 3%;
+  border-radius: 40px;
+  margin-top: 5%;
+  width: 26%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.aboutServiceButton {
+  border: none;
+  background: transparent;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.aboutServiceBgTitle {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: rotate(90deg); */
+}
+.aboutServiceBgTitle p {
+  transform: rotate(90deg);
+  color: #fff;
+  font-weight: 600;
+  font-size: 8rem;
+  opacity: 0.2;
+}
+@media only screen and (max-width: 1460px) {
+  .aboutServiceSubTitle {
+    width: 60%;
+  }
+  .aboutServiceDesp {
+    width: 80%;
+  }
+  .aboutServiceButtonDiv {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .aboutServiceSubTitle {
+    width: 80%;
+  }
+  .aboutServiceDesp {
+    width: 90%;
+  }
+  .aboutServiceButtonDiv {
+    padding: 1.5% 3%;
+    width: 33%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .aboutServiceSubTitle {
+    width: 95%;
+  }
+  .aboutServiceDesp {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+  .aboutServiceButtonDiv {
+    padding: 1.5% 3%;
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .aboutServiceButtonDiv {
+    width: 41%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .aboutServiceContainer {
+    flex-direction: column;
+  }
+  .aboutServiceLeftDiv {
+    width: 100%;
+  }
+  .aboutServiceRightDiv {
+    width: 100%;
+    padding: 5%;
+  }
+  .aboutServiceButtonDiv {
+    width: 30%;
+  }
+  .aboutServiceSubTitle {
+    width: 100%;
+  }
+  .aboutServiceDesp {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutServiceButtonDiv {
+    width: 35%;
+  }
+  .aboutServiceSubTitle {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .aboutServiceButtonDiv {
+    width: 40%;
+  }
+  .aboutServiceTitle {
+    font-size: 1rem;
+  }
+  .aboutServiceSubTitle {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .aboutServiceButtonDiv {
+    width: 50%;
+  }
+  .aboutServiceSubTitle {
+    font-size: 1.2rem;
+  }
+}
