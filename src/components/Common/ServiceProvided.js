@@ -7,6 +7,7 @@ import Custom from '../../assets/Images/service_provided_custom.png';
 import SectionHeader from '../Common/SectionHeader';
 import ServiceProvidedCard from '../Common/ServiceProvidedCard';
 import { Grid } from '@mui/material';
+import { Link } from 'react-router-dom';
 export default function ServiceProvided(props) {
   return (
     <>
@@ -15,13 +16,19 @@ export default function ServiceProvided(props) {
         <div className='serviceProvidedDiv'>
           <Grid className='serviceProvidedGridContainer' container spacing={1}>
             <Grid className='serviceProvidedGrid' xs={9} sm={8} md={3.5}>
-              <ServiceProvidedCard />
+              <Link to='/webdevelopment'>
+                <ServiceProvidedCard />
+              </Link>
             </Grid>
             <Grid className='serviceProvidedGrid' xs={9} sm={8} md={3.5}>
-              <ServiceProvidedCard title='App Development & design' src={App} />
+              <Link to='/appdevelopment'>
+                <ServiceProvidedCard title='App Development & design' src={App} />
+              </Link>
             </Grid>
             <Grid className='serviceProvidedGrid' xs={9} sm={8} md={3.5}>
-              <ServiceProvidedCard title='Custom Solutions' src={Custom} />
+              <Link to='/customsolutions'>
+                <ServiceProvidedCard title='Custom Solutions' src={Custom} />
+              </Link>
             </Grid>
           </Grid>
         </div>

@@ -1,6 +1,7 @@
 // Init
 import { Grid } from '@mui/material';
 import React from 'react';
+import { Link } from 'react-router-dom';
 // images
 import HeaderBG from '../../assets/Images/about_header_bg.svg';
 import HeaderMobBG from '../../assets/Images/about_mob_header_bg.svg';
@@ -21,10 +22,10 @@ export default function AboutHeader() {
                 We provide entrepreneurs and businesses with creative & innovative tools that
                 improves the way they do business.
               </p>
-              <div className='aboutHeaderBtnDiv'>
+              <Link to='/contactus' className='aboutHeaderBtnDiv'>
                 <button className='aboutHeaderBtn'>Get Started</button>
                 <Arrow className='aboutHeaderBtnArrow' />
-              </div>
+              </Link>
             </div>
           </Grid>
           <Grid className='aboutHeaderImgGrid' md={6}>

@@ -3,6 +3,7 @@ import React from 'react';
 // images
 import AboutServiceWeb from '../../assets/Images/about_service_web.svg';
 import { ReactComponent as Arrow } from '../../assets/Images/about_section_arrow.svg';
+import { Link } from 'react-router-dom';
 // Component
 export default function AboutService(props) {
   return (
@@ -28,10 +29,10 @@ export default function AboutService(props) {
               exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
               dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
             </p>
-            <div className='aboutServiceButtonDiv'>
+            <Link to={props.to} className='aboutServiceButtonDiv'>
               <button className='aboutServiceButton'>Get This Service</button>
               <Arrow color='#fff' />
-            </div>
+            </Link>
           </div>
         </div>
       </div>

@@ -33,15 +33,29 @@
   width: 30%;
   display: flex;
   justify-content: space-between;
+  /* background-color: #f7c844; */
 }
 .footerMenuDiv {
   line-height: 170%;
+  display: flex;
+  flex-direction: column;
 }
 .footerMenuDiv h2 {
   color: #b7b7b7;
   font-weight: 600;
   margin-bottom: 30px;
   font-size: 1.2rem;
+}
+.footerLinks {
+  color: #fbfbfb;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 5px 0 0;
+  transition: 0.5s;
+}
+.footerLinks:hover {
+  padding: 0 0 0 5px;
+  color: #f7c844;
 }
 .footerMenuDiv p {
   color: #fbfbfb;

@@ -14,7 +14,11 @@ export default function CustomSolution() {
     <div>
       <Navbar />
       <ServiceHeader path='Home>service>Custom solutions' title='Custom solutions' />
-      <AboutService src={AboutServiceCustom} title='We are Best in Custom solutions' />
+      <AboutService
+        src={AboutServiceCustom}
+        title='We are Best in Custom solutions'
+        to='/contactus'
+      />
       <OurProcess />
       <ServiceProvided h2='More Services' divider />
       <Footer />

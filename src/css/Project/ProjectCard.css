@@ -10,12 +10,12 @@
 .projectCardContainerLeft {
   width: 100%;
   height: 100%;
-  margin-bottom: -8px;
   position: relative;
   display: flex;
   justify-content: flex-start;
   overflow: hidden;
 }
+
 .projectCardHoverDiv {
   position: absolute;
   width: 50%;
@@ -23,6 +23,12 @@
   opacity: 0.9;
   height: 100%;
   padding: 5%;
+  z-index: 1;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.projectCardHoverDiv:hover {
+  opacity: 1;
 }
 .projectCardTextDiv {
   margin: 5% 0;
@@ -56,12 +62,16 @@
   background: #fbfbfb;
   padding: 1.5% 3%;
   border-radius: 40px;
-  margin-top: 10%;
+  margin: 10% 0 0 0;
   width: 23%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  transition: 0.5s;
+}
+.projectCardBtnDiv:hover {
+  margin: 9% 0 1% 0;
 }
 .projectCardBtnDiv img {
   width: 20%;
@@ -72,13 +82,27 @@
   border-radius: 40px;
   font-weight: 600;
   font-size: 0.9rem;
+  cursor: pointer;
   width: 80%;
 }
 .projectCardBgImage {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transform: scale(1);
+  transition: 0.5s;
+  overflow: hidden;
 }
+.projectCardBgImage:hover {
+  transform: scale(1.1);
+}
+.projectCardBgImage:hover + .projectCardHoverDiv {
+  opacity: 1 !important;
+}
+.projectCardHoverDiv:hover + .projectCardBgImage {
+  transform: scale(1.1);
+}
+
 @media only screen and (max-width: 1500px) {
   .projectCardBtnDiv {
     width: 30%;
@@ -106,8 +130,12 @@
     padding: 3% 5%;
   }
   .projectCardBtnDiv {
-    margin-top: 5%;
+    margin: 6% 0 0 0;
     width: 35%;
+  }
+
+  .projectCardBtnDiv:hover {
+    margin: 5% 0 1% 0;
   }
   .projectCardDesp {
     width: 100%;

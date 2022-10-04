@@ -51,6 +51,7 @@
   }
   .serviceHeaderDesp {
     width: 90%;
+    font-size: 0.9rem;
   }
 }
 @media only screen and (max-width: 480px) {

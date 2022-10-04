@@ -1,17 +1,24 @@
 // Init
 import React from 'react';
 // images
-import HeaderBG from '../../assets/Images/values_header_bg.svg';
+import HeaderWebBG from '../../assets/Images/values_header_bg.svg';
+import HeaderMobBG from '../../assets/Images/values_header_Mobbg.svg';
+import Mouse from '../../assets/Images/Mouse.gif';
+
 // Component
 export default function ValuesHeader(props) {
   return (
     <>
       <div className='OurValuesContainer'>
-        <img className='OurValuesBgImage' src={HeaderBG} />
+        <img className='OurValuesWebBgImage' src={HeaderWebBG} />
+        <img className='OurValuesMobBgImage' src={HeaderMobBG} />
         <div className='OurValuesTitleDiv'>
           <h2>
             <span>Our</span> Values
           </h2>
+        </div>
+        <div className='OurValuesMouseGif'>
+          <img src={Mouse} />
         </div>
       </div>
     </>

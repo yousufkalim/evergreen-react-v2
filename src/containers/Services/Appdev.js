@@ -14,7 +14,11 @@ export default function AppDev() {
     <div>
       <Navbar />
       <ServiceHeader path='Home - service - App' title='App Development & design' />
-      <AboutService src={AboutServiceApp} title='We are Best App Development company' />
+      <AboutService
+        src={AboutServiceApp}
+        title='We are Best App Development company'
+        to='/contactus'
+      />
       <OurProcess />
       <ServiceProvided h2='More Services' divider />
       <Footer />

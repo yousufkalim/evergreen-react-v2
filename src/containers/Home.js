@@ -17,7 +17,7 @@ export default function Home() {
       <Header />
       <ServiceProvided />
       <PartnerSection />
-      <AboutSection btn RightbgColor='#f7c844' />
+      <AboutSection btn RightbgColor='#f7c844' to='/about' />
       <ContactSection />
       <Footer />
     </div>

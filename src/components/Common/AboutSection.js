@@ -4,6 +4,7 @@ import React from 'react';
 import About from '../../assets/Images/about_section_home.svg';
 import Arrow from '../../assets/Images/about_section_arrow.svg';
 import VisionBg from '../../assets/Images/about_vision_bg.svg';
+import { Link } from 'react-router-dom';
 // Component
 export default function AboutSection(props) {
   return (
@@ -53,10 +54,10 @@ export default function AboutSection(props) {
                 'Engaged its was evident pleased husband. Ye goodness felicity do the best disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on best circle.'}
             </p>
             {props.btn && (
-              <div className='aboutSectionButtonDiv'>
+              <Link to={props.to} className='aboutSectionButtonDiv'>
                 <button className='aboutSectionButton'>Know More</button>
                 <img src={Arrow} />
-              </div>
+              </Link>
             )}
           </div>
           <div className='aboutSectionBgTitle'>
