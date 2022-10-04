@@ -1,6 +1,7 @@
 .aboutHeaderGridContainer {
   background: #1e1e1e;
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 .aboutHeaderTextGrid {
   display: flex;
@@ -32,11 +33,16 @@
   background: #f7c844;
   padding: 1% 3%;
   border-radius: 40px;
-  margin-top: 3%;
+  margin: 3% 0 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.aboutHeaderBtnDiv:hover {
+  margin: 2% 0 1% 0;
 }
 .aboutHeaderBtn {
   border: none;
@@ -45,6 +51,7 @@
   border-radius: 40px;
   font-weight: 600;
   font-size: 1rem;
+  cursor: pointer;
   color: #000000;
 }
 .aboutHeaderBtnArrow {
@@ -58,9 +65,21 @@
 }
 .aboutHeaderImgGrid img {
   width: 100%;
+  height: 100%;
+}
+.aboutHeaderWebImg {
+  height: 100%;
 }
 .aboutHeaderMobImg {
   display: none;
+}
+.css-a5rdam-MuiGrid-root {
+  margin-top: 0 !important;
+}
+@media only screen and (max-width: 1660px) {
+  .aboutHeaderGridContainer {
+    height: 100%;
+  }
 }
 @media only screen and (max-width: 1500px) {
   .aboutHeaderBtnDiv {

@@ -9,6 +9,7 @@ import { useScrollPosition } from '../../utils/ScrollPosition';
 import { Collapse, List, ListItemButton, ListItemText } from '@mui/material';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
+import { useLocation } from 'react-router-dom';
 // Component
 export default function Navbar() {
   let position = useScrollPosition();
@@ -22,6 +23,12 @@ export default function Navbar() {
   const myFunction = () => {
     SetActive(!Active);
   };
+  const menuRoute = window.location.pathname;
+
+  let { pathname } = useLocation();
+  useEffect(() => {
+    document.body.style.overflow = 'visible';
+  }, [pathname]);
   return (
     <>
       <div
@@ -33,8 +40,8 @@ export default function Navbar() {
         </Link>
         <div className='navbarMenuContainer'>
           <ul className='navbarMenuDiv'>
-            <Link style={{ color: '#b7b7b7', textDecoration: 'none' }} to='/'>
-              <li>Home</li>
+            <Link className='navbarMenuLinks' to='/'>
+              <li id={menuRoute === '/' ? 'disableId' : 'menuId'}>Home</li>
             </Link>
             <div className='navbarMenuServiveDropdown'>
               <div className='navbarMenuServiveDiv'>
@@ -44,26 +51,32 @@ export default function Navbar() {
               <div id='a'>
                 <ul style={{ listStyle: 'none' }}>
                   <Link style={{ textDecoration: 'none', color: '#b7b7b7' }} to='/webdevelopment'>
-                    <li>Web Development</li>
+                    <li id={menuRoute === '/webdevelopment' ? 'disableId' : 'menuId'}>
+                      Web Development
+                    </li>
                   </Link>
                   <Link style={{ textDecoration: 'none', color: '#b7b7b7' }} to='/appdevelopment'>
-                    <li>App Development</li>
+                    <li id={menuRoute === '/appdevelopment' ? 'disableId' : 'menuId'}>
+                      App Development
+                    </li>
                   </Link>
                   <Link style={{ textDecoration: 'none', color: '#b7b7b7' }} to='/customsolutions'>
-                    <li>Custom Solution</li>
+                    <li id={menuRoute === '/customsolutions' ? 'disableId' : 'menuId'}>
+                      Custom Solution
+                    </li>
                   </Link>
                 </ul>
               </div>
             </div>
 
-            <Link style={{ color: '#b7b7b7', textDecoration: 'none' }} to='/project'>
-              <li>Projects</li>
+            <Link className='navbarMenuLinks' to='/project'>
+              <li id={menuRoute === '/project' ? 'disableId' : 'menuId'}>Projects</li>
             </Link>
-            <Link style={{ color: '#b7b7b7', textDecoration: 'none' }} to='/ourvalues'>
-              <li>Our Values</li>
+            <Link className='navbarMenuLinks' to='/ourvalues'>
+              <li id={menuRoute === '/ourvalues' ? 'disableId' : 'menuId'}>Our Values</li>
             </Link>
-            <Link style={{ color: '#b7b7b7', textDecoration: 'none' }} to='/about'>
-              <li>About</li>
+            <Link className='navbarMenuLinks' to='/about'>
+              <li id={menuRoute === '/about' ? 'disableId' : 'menuId'}>About</li>
             </Link>
           </ul>
         </div>
@@ -77,6 +90,11 @@ export default function Navbar() {
           onClick={() => {
             myFunction();
             setMenu(!menu);
+            if (!menu) {
+              document.body.style.overflow = 'hidden';
+            } else {
+              document.body.style.overflow = 'visible';
+            }
           }}
         >
           <div className='bar1'></div>
@@ -97,7 +115,10 @@ export default function Navbar() {
           >
             <ListItemButton>
               <Link className='navbarMobMenuLink' to='/about'>
-                <ListItemText id='Mob_items' primary='About' />
+                <ListItemText
+                  id={menuRoute === '/about' ? 'disableId' : 'menuId'}
+                  primary='About'
+                />
               </Link>
             </ListItemButton>
             <ListItemButton
@@ -115,21 +136,21 @@ export default function Navbar() {
                   }}
                 >
                   <Link className='navbarMobMenuLink' to='/webdevelopment'>
-                    <ListItemText>
+                    <ListItemText id={menuRoute === '/webdevelopment' ? 'disableId' : 'menuId'}>
                       <div> WEB DEVELOPMENT</div>
                     </ListItemText>
                   </Link>
                 </ListItemButton>
                 <ListItemButton sx={{ pl: 6 }}>
                   <Link className='navbarMobMenuLink' to='/appdevelopment'>
-                    <ListItemText>
+                    <ListItemText id={menuRoute === '/appdevelopment' ? 'disableId' : 'menuId'}>
                       <div> APP DEVELOPMENT</div>
                     </ListItemText>
                   </Link>
                 </ListItemButton>
                 <ListItemButton sx={{ pl: 6 }}>
                   <Link className='navbarMobMenuLink' to='/customsolutions'>
-                    <ListItemText>
+                    <ListItemText id={menuRoute === '/customsolutions' ? 'disableId' : 'menuId'}>
                       <div> CUSTOM SOLUTIONS</div>
                     </ListItemText>
                   </Link>
@@ -138,17 +159,26 @@ export default function Navbar() {
             </Collapse>
             <ListItemButton>
               <Link className='navbarMobMenuLink' to={`/project`}>
-                <ListItemText primary='Our Projects' />
+                <ListItemText
+                  id={menuRoute === '/project' ? 'disableId' : 'menuId'}
+                  primary='Our Projects'
+                />
               </Link>
             </ListItemButton>
             <ListItemButton>
               <Link className='navbarMobMenuLink' to={`/ourvalues`}>
-                <ListItemText primary='Our Values' />
+                <ListItemText
+                  id={menuRoute === '/ourvalues' ? 'disableId' : 'menuId'}
+                  primary='Our Values'
+                />
               </Link>
             </ListItemButton>
             <ListItemButton>
               <Link className='navbarMobMenuLink' to={`/contactus`}>
-                <ListItemText primary='Contact Us' />
+                <ListItemText
+                  id={menuRoute === '/contactus' ? 'disableId' : 'menuId'}
+                  primary='Contact Us'
+                />
               </Link>
             </ListItemButton>
           </List>

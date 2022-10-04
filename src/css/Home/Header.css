@@ -44,12 +44,16 @@
   background: #f7c844;
   padding: 0.5% 1%;
   border-radius: 40px;
-  margin-top: 3%;
+  margin: 3% 0 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
   text-decoration: none;
+  transition: 0.5s;
+}
+.homeHeaderBtnDiv:hover {
+  margin: 2.5% 0 0.5% 0;
 }
 .homeHeaderBtn {
   border: none;

@@ -13,7 +13,7 @@ export default function WebDev() {
     <div>
       <Navbar />
       <ServiceHeader path='Home>service>Website' title='Web Development & design' />
-      <AboutService />
+      <AboutService to='/contactus' />
       <OurProcess />
       <ServiceProvided h2='More Services' divider />
       <Footer />

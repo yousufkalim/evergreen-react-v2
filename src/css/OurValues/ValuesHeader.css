@@ -1,26 +1,26 @@
 .OurValuesContainer {
-  /* height: 100vh; */
+  height: 100vh;
   background: #1e1e1e;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5% 5% 0 5%;
   position: relative;
-  /* background-image: url(../../assets/Images/values_header_bg.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw; */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
-.OurValuesBgImage {
+.OurValuesWebBgImage {
   object-fit: cover;
   width: 100%;
+}
+.OurValuesMobBgImage {
+  display: none;
 }
 .OurValuesTitleDiv {
   position: absolute;
   top: 35%;
-  right: 43%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .OurValuesTitleDiv h2 {
   color: #f8f8f8;
@@ -30,21 +30,61 @@
 .OurValuesTitleDiv h2 span {
   color: #f7c844;
 }
+.OurValuesMouseGif {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.OurValuesMouseGif img {
+  width: 7%;
+}
+@media only screen and (max-width: 1660px) {
+  .OurValuesContainer {
+    height: 100%;
+  }
+}
 @media only screen and (max-width: 1366px) {
-  .OurValuesTitleDiv {
-    right: 40%;
+  .OurValuesMouseGif img {
+    width: 10%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .OurValuesMouseGif img {
+    width: 12%;
   }
 }
 @media only screen and (max-width: 768px) {
-  .OurValuesTitleDiv {
-    right: 32%;
-  }
   .OurValuesTitleDiv h2 {
     font-size: 2.8rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  .OurValuesTitleDiv {
-    right: 30%;
+  .OurValuesMouseGif {
+    bottom: 25%;
+  }
+  .OurValuesMouseGif img {
+    width: 18%;
+  }
+  .OurValuesWebBgImage {
+    display: none;
+  }
+  .OurValuesMobBgImage {
+    display: block;
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+  }
+  .OurValuesContainer {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .OurValuesMouseGif {
+    bottom: 35%;
+  }
+  .OurValuesMouseGif img {
+    width: 25%;
   }
 }
