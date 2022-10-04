@@ -15,6 +15,7 @@ export default function About() {
       <Navbar />
       <Header />
       <AboutSection
+        fullImg
         bgColor='#FBF6E9'
         titleColor='#f7c844'
         subTitleColor='#1E1E1E'

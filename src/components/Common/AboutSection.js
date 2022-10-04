@@ -10,11 +10,21 @@ export default function AboutSection(props) {
   return (
     <>
       <div className='aboutSectionContainer' style={{ background: props.bgColor && props.bgColor }}>
-        <div className='aboutSectionLeftDiv'>
-          <div className='aboutSectionImageDiv'>
-            <img src={props.src || About} />
+        {props.centerImg && (
+          <div className='aboutSectionLeftDiv'>
+            <div className='aboutSectionImageDiv'>
+              <img src={props.src || About} />
+            </div>
           </div>
-        </div>
+        )}
+        {props.fullImg && (
+          <div className='aboutSectionLeftDiv_fullImg'>
+            <div className='aboutSectionImageDiv_fullImg'>
+              <img src={props.src || About} />
+            </div>
+          </div>
+        )}
+
         <div
           className='aboutSectionRightDiv'
           style={{ background: props.RightbgColor && props.RightbgColor }}
