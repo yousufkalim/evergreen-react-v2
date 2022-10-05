@@ -43,6 +43,7 @@
 }
 .aboutHeaderBtnDiv:hover {
   margin: 2% 0 1% 0;
+  background: #e0ad21;
 }
 .aboutHeaderBtn {
   border: none;

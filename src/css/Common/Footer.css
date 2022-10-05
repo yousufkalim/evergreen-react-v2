@@ -80,6 +80,12 @@
 }
 .footerSocialDiv img {
   margin: 0 1%;
+  padding: 3% 0 0 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.footerSocialDiv img:hover {
+  padding: 0 0 3% 0;
 }
 @media only screen and (max-width: 1660px) {
   .footerContainer {
@@ -111,10 +117,10 @@
     font-size: 0.9rem;
   }
   .footerLeftSection {
-    width: 55%;
+    width: 50%;
   }
   .footerRightSection {
-    width: 35%;
+    width: 45%;
   }
   .footerMenuDiv h2 {
     font-size: 1rem;
@@ -142,11 +148,17 @@
   .footerRightSection {
     width: 45%;
   }
+  .footerLinks {
+    font-size: 0.9rem;
+  }
   .footerLeftSection {
     width: 50%;
   }
 }
 @media only screen and (max-width: 600px) {
+  .footerLinks {
+    font-size: 1rem;
+  }
   .footerUpperDiv {
     flex-direction: column;
   }
