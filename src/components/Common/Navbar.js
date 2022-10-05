@@ -144,7 +144,16 @@ export default function Navbar() {
               style={{ textDecoration: 'none', color: '#b7b7b7' }}
               onClick={handleClick}
             >
-              <ListItemText primary='Services' />
+              <ListItemText
+                id={
+                  menuRoute === '/webdevelopment' ||
+                  menuRoute === '/appdevelopment' ||
+                  menuRoute === '/customsolutions'
+                    ? 'disableId'
+                    : 'menuId'
+                }
+                primary='Services'
+              />
               {open ? <ExpandLess /> : <ExpandMore />}
             </ListItemButton>
             <Collapse in={open} timeout='auto' unmountOnExit>
@@ -156,21 +165,24 @@ export default function Navbar() {
                 >
                   <Link className='navbarMobMenuLink' to='/webdevelopment'>
                     <ListItemText id={menuRoute === '/webdevelopment' ? 'disableId' : 'menuId'}>
-                      <div> WEB DEVELOPMENT</div>
+                      <div style={{ fontSize: '1.4rem', lineHeight: '100%' }}> WEB DEVELOPMENT</div>
                     </ListItemText>
                   </Link>
                 </ListItemButton>
                 <ListItemButton sx={{ pl: 6 }}>
                   <Link className='navbarMobMenuLink' to='/appdevelopment'>
                     <ListItemText id={menuRoute === '/appdevelopment' ? 'disableId' : 'menuId'}>
-                      <div> APP DEVELOPMENT</div>
+                      <div style={{ fontSize: '1.4rem', lineHeight: '100%' }}> APP DEVELOPMENT</div>
                     </ListItemText>
                   </Link>
                 </ListItemButton>
                 <ListItemButton sx={{ pl: 6 }}>
                   <Link className='navbarMobMenuLink' to='/customsolutions'>
                     <ListItemText id={menuRoute === '/customsolutions' ? 'disableId' : 'menuId'}>
-                      <div> CUSTOM SOLUTIONS</div>
+                      <div style={{ fontSize: '1.4rem', lineHeight: '100%' }}>
+                        {' '}
+                        CUSTOM SOLUTIONS
+                      </div>
                     </ListItemText>
                   </Link>
                 </ListItemButton>
