@@ -3,6 +3,7 @@ import React from 'react';
 // images
 import WebProcess from '../../assets/Images/service_process_web.svg';
 import BgTitle from '../../assets/Images/process_bg_title.svg';
+import { motion } from 'framer-motion';
 // Component
 export default function OurProcess() {
   return (
@@ -18,9 +19,15 @@ export default function OurProcess() {
             </div>
             <h2 className='OurProcessSubTitle'>We always follow the standard work process</h2>
           </div>
-          <div className='OurProcessImageDiv'>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className='OurProcessImageDiv'
+          >
             <img src={WebProcess} />
-          </div>
+          </motion.div>
         </div>
         <div className='OurProcessRightDiv'>
           <img src={BgTitle} />
