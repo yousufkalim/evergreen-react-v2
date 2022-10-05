@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 // images
 import Logo from '../../assets/Images/navbar_logo.svg';
 import { ReactComponent as ContactIcon } from '../../assets/Images/navbar_contact_btn.svg';
-import ServiceIcon from '../../assets/Images/navbar_service_icon.svg';
+import { ReactComponent as ServiceIcon } from '../../assets/Images/navbar_service_icon.svg';
 import { Link } from 'react-router-dom';
 import { useScrollPosition } from '../../utils/ScrollPosition';
 import { Collapse, List, ListItemButton, ListItemText } from '@mui/material';
@@ -45,8 +45,27 @@ export default function Navbar() {
             </Link>
             <div className='navbarMenuServiveDropdown'>
               <div className='navbarMenuServiveDiv'>
-                <li>Service</li>
-                <img className='navbarMenuServiveIcon' src={ServiceIcon} />
+                <li
+                  id={
+                    menuRoute === '/webdevelopment' ||
+                    menuRoute === '/appdevelopment' ||
+                    menuRoute === '/customsolutions'
+                      ? 'disableId'
+                      : 'menuId'
+                  }
+                >
+                  Service
+                </li>
+                <ServiceIcon
+                  id={
+                    menuRoute === '/webdevelopment' ||
+                    menuRoute === '/appdevelopment' ||
+                    menuRoute === '/customsolutions'
+                      ? 'disableId'
+                      : 'menuId'
+                  }
+                  className='navbarMenuServiveIcon'
+                />
               </div>
               <div id='a'>
                 <ul style={{ listStyle: 'none' }}>
@@ -125,7 +144,16 @@ export default function Navbar() {
               style={{ textDecoration: 'none', color: '#b7b7b7' }}
               onClick={handleClick}
             >
-              <ListItemText primary='Services' />
+              <ListItemText
+                id={
+                  menuRoute === '/webdevelopment' ||
+                  menuRoute === '/appdevelopment' ||
+                  menuRoute === '/customsolutions'
+                    ? 'disableId'
+                    : 'menuId'
+                }
+                primary='Services'
+              />
               {open ? <ExpandLess /> : <ExpandMore />}
             </ListItemButton>
             <Collapse in={open} timeout='auto' unmountOnExit>
@@ -137,21 +165,24 @@ export default function Navbar() {
                 >
                   <Link className='navbarMobMenuLink' to='/webdevelopment'>
                     <ListItemText id={menuRoute === '/webdevelopment' ? 'disableId' : 'menuId'}>
-                      <div> WEB DEVELOPMENT</div>
+                      <div style={{ fontSize: '1.4rem', lineHeight: '100%' }}> WEB DEVELOPMENT</div>
                     </ListItemText>
                   </Link>
                 </ListItemButton>
                 <ListItemButton sx={{ pl: 6 }}>
                   <Link className='navbarMobMenuLink' to='/appdevelopment'>
                     <ListItemText id={menuRoute === '/appdevelopment' ? 'disableId' : 'menuId'}>
-                      <div> APP DEVELOPMENT</div>
+                      <div style={{ fontSize: '1.4rem', lineHeight: '100%' }}> APP DEVELOPMENT</div>
                     </ListItemText>
                   </Link>
                 </ListItemButton>
                 <ListItemButton sx={{ pl: 6 }}>
                   <Link className='navbarMobMenuLink' to='/customsolutions'>
                     <ListItemText id={menuRoute === '/customsolutions' ? 'disableId' : 'menuId'}>
-                      <div> CUSTOM SOLUTIONS</div>
+                      <div style={{ fontSize: '1.4rem', lineHeight: '100%' }}>
+                        {' '}
+                        CUSTOM SOLUTIONS
+                      </div>
                     </ListItemText>
                   </Link>
                 </ListItemButton>

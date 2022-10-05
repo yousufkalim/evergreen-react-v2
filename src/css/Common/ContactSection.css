@@ -44,7 +44,7 @@
   padding: 8% 3%;
 }
 .contactSectionLeftContent {
-  width: 30%;
+  width: 35%;
   display: flex;
   flex-direction: column;
 }
@@ -66,6 +66,7 @@
   display: flex;
   align-items: center;
   margin: 3% 0;
+  text-decoration: none;
 }
 .contactSectionLink img {
   width: 7%;
@@ -79,10 +80,10 @@
 }
 .contactSectionLinkText span {
   color: #fbfbfb;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .contactSectionRightContent {
-  width: 70%;
+  width: 65%;
   display: flex;
 }
 .contactSectionFormDiv {
@@ -208,6 +209,13 @@ textarea::placeholder {
   color: #b7b7b7;
   opacity: 0.3; /* Firefox */
 }
+.formValidationError {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #ff603d;
+  font-size: 1rem;
+}
 
 @media only screen and (max-width: 1660px) {
   .contactSectionFormInputDiv input {
@@ -220,6 +228,9 @@ textarea::placeholder {
   }
 }
 @media only screen and (max-width: 1200px) {
+  .formValidationError {
+    font-size: 0.9rem;
+  }
   .contactSectionMainDiv {
     margin-right: 5%;
   }
@@ -230,7 +241,7 @@ textarea::placeholder {
     font-size: 0.9rem;
   }
   .contactSectionLinkText span {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .contactSectionBtnDiv {
     width: 25%;
@@ -259,17 +270,20 @@ textarea::placeholder {
     margin: 5% 0;
   }
   .contactSectionLinksHeadingDiv {
-    width: 45%;
+    width: 40%;
   }
   .contactSectionLinksDiv {
-    width: 50%;
+    width: 60%;
     margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .contactSectionLink img {
-    width: 15%;
+    width: 25px;
+  }
+  .contactSectionLink {
+    width: 50%;
   }
   .contactSectionBgTitleDiv img {
     width: 80%;
@@ -277,10 +291,10 @@ textarea::placeholder {
 }
 @media only screen and (max-width: 900px) {
   .contactSectionFormInputDiv input {
-    margin-bottom: 1%;
+    margin-bottom: 3%;
   }
   .contactSectionFormInputDiv textarea {
-    margin-bottom: 1%;
+    margin-bottom: 0;
   }
   .contactSectionLeftContent {
     margin: 10% 0 5% 0;
@@ -311,14 +325,17 @@ textarea::placeholder {
   }
 }
 @media only screen and (max-width: 768px) {
+  .contactSectionLink {
+    width: 100%;
+  }
   .contactSectionFormInputDiv input {
-    margin-bottom: 2%;
+    margin-bottom: 5%;
   }
   .contactSectionFormInputDiv textarea {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
   }
   .contactSectionLinksDiv {
-    width: 40%;
+    width: 55%;
     align-items: flex-start;
     flex-direction: column;
   }
@@ -328,10 +345,10 @@ textarea::placeholder {
 }
 @media only screen and (max-width: 600px) {
   .contactSectionFormInputDiv input {
-    margin-bottom: 3%;
+    margin-bottom: 2%;
   }
   .contactSectionFormInputDiv textarea {
-    margin-bottom: 3%;
+    margin-bottom: 2%;
   }
   .contactSectionContainer {
     padding: 15% 0 3% 0;
@@ -360,13 +377,16 @@ textarea::placeholder {
   .contactSectionHeaderDiv p {
     width: 80%;
   }
+  .contactSectionLink {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 480px) {
   .contactSectionFormInputDiv input {
-    margin-bottom: 4%;
+    margin-bottom: 3%;
   }
   .contactSectionFormInputDiv textarea {
-    margin-bottom: 4%;
+    margin-bottom: 3%;
   }
   .contactSectionBtnDiv {
     width: 40%;
@@ -379,5 +399,13 @@ textarea::placeholder {
   }
   .contactSectionLinksDiv {
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .contactSectionFormInputDiv input {
+    margin-bottom: 5%;
+  }
+  .contactSectionFormInputDiv textarea {
+    margin-bottom: 5%;
   }
 }

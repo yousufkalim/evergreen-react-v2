@@ -8,6 +8,9 @@ import Call from '../../assets/Images/contact_callus.svg';
 import Email from '../../assets/Images/contact_mail.svg';
 import { Grid } from '@mui/material';
 import validate from 'validate.js';
+import emailjs from 'emailjs-com';
+import { toast } from 'react-toastify';
+import { motion } from 'framer-motion';
 
 // Component
 export default function ContactSection() {
@@ -68,6 +71,39 @@ export default function ContactSection() {
       },
     },
   };
+  const resetForm = () => {
+    setFormState({
+      isValid: false,
+      values: {
+        name: '',
+        phone: '',
+        company: '',
+        email: '',
+        message: '',
+      },
+      touched: {},
+      errors: {},
+    });
+  };
+  const sendEmail = (e) => {
+    e.preventDefault();
+    {
+      emailjs.sendForm('service_m0ydgq9', 'template_2ol3ftd', e.target, 'RaQx7FccGRBjX6Sqp').then(
+        (result) => {
+          resetForm();
+          return result;
+        },
+        (error) => {
+          return error;
+        }
+      );
+    }
+
+    resetForm();
+    toast.success(
+      'Thank you, the information has been submitted successfully. We will come back to you shortly.'
+    );
+  };
   const handleChange = (event) => {
     setFormState((formState) => ({
       ...formState,
@@ -100,39 +136,57 @@ export default function ContactSection() {
           <img src={BgTitle} />
         </div>
         <div className='contactSectionMainDiv'>
-          <div className='contactSectionHeaderDiv'>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className='contactSectionHeaderDiv'
+          >
             <h2>Contact us</h2>
             <p>
               Please send us a detailed message about your needs and we will get back to you shortly
             </p>
-          </div>
+          </motion.div>
           <div className='contactSectionContentDiv'>
-            <div className='contactSectionLeftContent'>
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true }}
+              className='contactSectionLeftContent'
+            >
               <div className='contactSectionLinksHeadingDiv'>
                 <h2>Get in Touch</h2>
                 <p>Tell us More about you and we’ll contact you soon</p>
               </div>
               <div className='contactSectionLinksDiv'>
-                <div className='contactSectionLink'>
+                <a href='tel:313-509-8197' className='contactSectionLink'>
                   <img src={Call} />
                   <div className='contactSectionLinkText'>
                     <p>Call us</p>
-                    <span>+1234567887654</span>
+                    <span>+92 313 5098197</span>
                   </div>
-                </div>
-                <div className='contactSectionLink'>
+                </a>
+                <a href='mailto:adeel.baig@falconconsulting.fr' className='contactSectionLink'>
                   <img src={Email} />
                   <div className='contactSectionLinkText'>
-                    <p>Gmail</p>
-                    <span>ABCD@gmail.com</span>
+                    <p>Email</p>
+                    <span>adeel.baig@falconconsulting.fr</span>
                   </div>
-                </div>
+                </a>
               </div>
-            </div>
-            <div className='contactSectionRightContent'>
-              <form className='contactSectionFormDiv'>
+            </motion.div>
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+              className='contactSectionRightContent'
+            >
+              <form onSubmit={sendEmail} className='contactSectionFormDiv'>
                 <Grid className='contactSectionFormContainer' container spacing={1}>
-                  <Grid className='contactSectionFormGrid' xs={12} md={5.8}>
+                  <Grid className='contactSectionFormGrid' xs={12} sm={5.8}>
                     <div className='contactSectionFormInputDiv'>
                       <label
                         style={{
@@ -167,20 +221,11 @@ export default function ContactSection() {
                         placeholder='Your Name'
                       />
                       {hasError('name') && (
-                        <div
-                          style={{
-                            position: 'absolute',
-                            bottom: '0',
-                            right: '0',
-                            color: '#FF603D',
-                          }}
-                        >
-                          {formState.errors.name[0]}
-                        </div>
+                        <div className='formValidationError'>{formState.errors.name[0]}</div>
                       )}
                     </div>
                   </Grid>
-                  <Grid className='contactSectionFormGrid' xs={12} md={5.8}>
+                  <Grid className='contactSectionFormGrid' xs={12} sm={5.8}>
                     <div className='contactSectionFormInputDiv'>
                       <label
                         style={{
@@ -214,20 +259,11 @@ export default function ContactSection() {
                         placeholder='Your Company'
                       />
                       {hasError('company') && (
-                        <div
-                          style={{
-                            position: 'absolute',
-                            bottom: '0',
-                            right: '0',
-                            color: '#FF603D',
-                          }}
-                        >
-                          {formState.errors.company[0]}
-                        </div>
+                        <div className='formValidationError'>{formState.errors.company[0]}</div>
                       )}
                     </div>
                   </Grid>
-                  <Grid className='contactSectionFormGrid' xs={12} md={5.8}>
+                  <Grid className='contactSectionFormGrid' xs={12} sm={5.8}>
                     <div className='contactSectionFormInputDiv'>
                       <label
                         style={{
@@ -261,20 +297,11 @@ export default function ContactSection() {
                         placeholder='acb@xyz.com'
                       />
                       {hasError('email') && (
-                        <div
-                          style={{
-                            position: 'absolute',
-                            bottom: '0',
-                            right: '0',
-                            color: '#FF603D',
-                          }}
-                        >
-                          {formState.errors.email[0]}
-                        </div>
+                        <div className='formValidationError'>{formState.errors.email[0]}</div>
                       )}
                     </div>
                   </Grid>
-                  <Grid className='contactSectionFormGrid' xs={12} md={5.8}>
+                  <Grid className='contactSectionFormGrid' xs={12} sm={5.8}>
                     <div className='contactSectionFormInputDiv'>
                       <label
                         style={{
@@ -315,16 +342,7 @@ export default function ContactSection() {
                         placeholder='Enter Number'
                       />
                       {hasError('phone') && (
-                        <div
-                          style={{
-                            position: 'absolute',
-                            bottom: '0',
-                            right: '0',
-                            color: '#FF603D',
-                          }}
-                        >
-                          {formState.errors.phone[0]}
-                        </div>
+                        <div className='formValidationError'>{formState.errors.phone[0]}</div>
                       )}
                     </div>
                   </Grid>
@@ -364,16 +382,7 @@ export default function ContactSection() {
                         placeholder='Type something...'
                       />
                       {hasError('message') && (
-                        <div
-                          style={{
-                            position: 'absolute',
-                            bottom: '0',
-                            right: '0',
-                            color: '#FF603D',
-                          }}
-                        >
-                          {formState.errors.message[0]}
-                        </div>
+                        <div className='formValidationError'>{formState.errors.message[0]}</div>
                       )}
                     </div>
                   </Grid>
@@ -400,7 +409,7 @@ export default function ContactSection() {
                   </div>
                 </div>
               </form>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

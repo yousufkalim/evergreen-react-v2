@@ -13,7 +13,7 @@ export default function CustomSolution() {
   return (
     <div>
       <Navbar />
-      <ServiceHeader path='Home>service>Custom solutions' title='Custom solutions' />
+      <ServiceHeader path='Home > Service > Custom solutions' title='Custom solutions' />
       <AboutService
         src={AboutServiceCustom}
         title='We are Best in Custom solutions'

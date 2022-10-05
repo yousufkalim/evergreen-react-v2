@@ -62,7 +62,7 @@
 }
 @media only screen and (max-width: 600px) {
   .OurValuesMouseGif {
-    bottom: 25%;
+    bottom: 30%;
   }
   .OurValuesMouseGif img {
     width: 18%;
@@ -73,7 +73,7 @@
   .OurValuesMobBgImage {
     display: block;
     height: 100vh;
-    object-fit: cover;
+    /* object-fit: cover; */
     width: 100%;
   }
   .OurValuesContainer {

@@ -13,7 +13,7 @@ export default function AppDev() {
   return (
     <div>
       <Navbar />
-      <ServiceHeader path='Home - service - App' title='App Development & design' />
+      <ServiceHeader path='Home > Service > App' title='App Development & design' />
       <AboutService
         src={AboutServiceApp}
         title='We are Best App Development company'

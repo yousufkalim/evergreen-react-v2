@@ -5,6 +5,8 @@ import About from '../../assets/Images/about_section_home.svg';
 import Arrow from '../../assets/Images/about_section_arrow.svg';
 import VisionBg from '../../assets/Images/about_vision_bg.svg';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
 // Component
 export default function AboutSection(props) {
   return (
@@ -29,7 +31,13 @@ export default function AboutSection(props) {
           className='aboutSectionRightDiv'
           style={{ background: props.RightbgColor && props.RightbgColor }}
         >
-          <div className='aboutSectionTextDiv'>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className='aboutSectionTextDiv'
+          >
             <div className='aboutSectionTitleDiv'>
               <div
                 className='aboutSectionTitleDivider'
@@ -69,7 +77,7 @@ export default function AboutSection(props) {
                 <img src={Arrow} />
               </Link>
             )}
-          </div>
+          </motion.div>
           <div className='aboutSectionBgTitle'>
             <img src={props.bgSrc || VisionBg} />
           </div>

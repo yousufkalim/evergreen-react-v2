@@ -2,6 +2,8 @@
 import React from 'react';
 // images
 import ValueImage1 from '../../assets/Images/values_section_1.svg';
+import { motion } from 'framer-motion';
+
 // Component
 
 export default function ValuesSection(props) {
@@ -19,7 +21,13 @@ export default function ValuesSection(props) {
             props.reverse ? 'valuesSectionTextContainerReverse' : 'valuesSectionTextContainer'
           }
         >
-          <div className={props.reverse ? 'valuesSectionTextDivReverse' : 'valuesSectionTextDiv'}>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className={props.reverse ? 'valuesSectionTextDivReverse' : 'valuesSectionTextDiv'}
+          >
             <div
               className={
                 props.reverse ? 'valuesSectionSubTitleDivReverse' : 'valuesSectionSubTitleDiv'
@@ -45,7 +53,7 @@ export default function ValuesSection(props) {
               <br />
               <p>{props.p2}</p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
