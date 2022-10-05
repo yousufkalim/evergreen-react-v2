@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 // images
 import Logo from '../../assets/Images/navbar_logo.svg';
 import { ReactComponent as ContactIcon } from '../../assets/Images/navbar_contact_btn.svg';
-import ServiceIcon from '../../assets/Images/navbar_service_icon.svg';
+import { ReactComponent as ServiceIcon } from '../../assets/Images/navbar_service_icon.svg';
 import { Link } from 'react-router-dom';
 import { useScrollPosition } from '../../utils/ScrollPosition';
 import { Collapse, List, ListItemButton, ListItemText } from '@mui/material';
@@ -45,8 +45,27 @@ export default function Navbar() {
             </Link>
             <div className='navbarMenuServiveDropdown'>
               <div className='navbarMenuServiveDiv'>
-                <li>Service</li>
-                <img className='navbarMenuServiveIcon' src={ServiceIcon} />
+                <li
+                  id={
+                    menuRoute === '/webdevelopment' ||
+                    menuRoute === '/appdevelopment' ||
+                    menuRoute === '/customsolutions'
+                      ? 'disableId'
+                      : 'menuId'
+                  }
+                >
+                  Service
+                </li>
+                <ServiceIcon
+                  id={
+                    menuRoute === '/webdevelopment' ||
+                    menuRoute === '/appdevelopment' ||
+                    menuRoute === '/customsolutions'
+                      ? 'disableId'
+                      : 'menuId'
+                  }
+                  className='navbarMenuServiveIcon'
+                />
               </div>
               <div id='a'>
                 <ul style={{ listStyle: 'none' }}>
