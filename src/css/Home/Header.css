@@ -1,6 +1,6 @@
 /* Header Component Style */
 .homeHeaderContainer {
-  background: url(../../assets/Images/background_effect.png), #1e1e1e;
+  background: url(../../assets/Images/background_effectV2.png), rgba(30, 30, 30, 0.6);
   background-blend-mode: hard-light, normal;
   background-size: cover;
   height: 100vh;
@@ -24,24 +24,32 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 5%;
+  top: 10%;
   text-align: center;
 }
 .homeHeaderTitle {
-  color: #fff;
-  font-weight: 400;
-  font-size: 2.5rem;
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 76px;
+  text-align: center;
+  /* width: 50%; */
+  color: rgba(251, 251, 251, 1);
 }
 .homeHeaderTitle span {
   font-weight: 700;
 }
 .homeHeaderDesp {
   color: #b7b7b7;
+  font-family: Poppins;
+  font-size: 22px;
   font-weight: 500;
+  text-align: center;
+  margin-top: 2%;
 }
 .homeHeaderBtnDiv {
-  width: 10%;
-  background: #f7c844;
+  width: 22%;
+  background: #c1fe00;
   padding: 0.5% 1%;
   border-radius: 40px;
   margin: 3% 0 0 0;
@@ -54,7 +62,7 @@
 }
 .homeHeaderBtnDiv:hover {
   margin: 2.5% 0 0.5% 0;
-  background: #e0ad21;
+  background: #dcff68;
 }
 .homeHeaderBtn {
   border: none;
@@ -73,14 +81,30 @@
   width: 20%;
 }
 .homeHeaderMouseDiv {
-  margin-top: 15%;
+  margin-top: 8%;
 }
 .homeHeaderMouseGif {
   width: 30%;
 }
 @media only screen and (max-width: 1500px) {
+  .homeHeaderTextDiv {
+    top: 10%;
+  }
+  .homeHeaderMouseDiv {
+    margin-top: 5%;
+  }
+  .homeHeaderTitle {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+  }
   .homeHeaderBtnDiv {
-    width: 12%;
+    width: 22%;
+    margin: 2% 0 0 0;
+  }
+  .homeHeaderDesp {
+    font-size: 18px;
+    margin-top: 2%;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -91,21 +115,38 @@
 }
 @media only screen and (max-width: 768px) {
   .homeHeaderBtnDiv {
-    width: 22%;
+    width: 41%;
+  }
+  .homeHeaderTitle {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 40px;
+    width: 98%;
+  }
+  .homeHeaderDesp {
+    font-size: 0.9rem;
+    width: 98%;
+  }
+  .homeHeaderBtnDiv {
+    width: 90%;
+    margin: 5% 0 0 0;
+  }
+  .homeHeaderMouseDiv {
+    margin-top: 15%;
   }
 }
 @media only screen and (max-width: 600px) {
   .homeHeaderBtnDiv {
-    width: 30%;
+    width: 60%;
   }
 }
 @media only screen and (max-width: 480px) {
   .homeHeaderBtnDiv {
-    width: 35%;
+    width: 75%;
   }
 }
 @media only screen and (max-width: 380px) {
   .homeHeaderBtnDiv {
-    width: 50%;
+    width: 90%;
   }
 }

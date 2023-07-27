@@ -1,12 +1,12 @@
 // Init
-import React, { useEffect } from 'react';
-import { ToastContainer, Flip } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React, { useEffect } from "react";
+import { ToastContainer, Flip } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // Files
-import Index from './routes/index';
-import './css/index.css';
-import { useLocation } from 'react-router-dom';
+import Index from "./routes/index";
+import "./css/index.css";
+import { useLocation } from "react-router-dom";
 
 // Component
 function App() {
@@ -15,14 +15,14 @@ function App() {
     // Scroll to top logic
     window.scrollTo({
       top: 0,
-      behavior: 'auto',
+      behavior: "auto",
     });
   }, [pathname]);
   return (
-    <div className='App'>
+    <div className="App">
       {/* toastify Container for Notification */}
       <ToastContainer
-        position='bottom-right'
+        position="bottom-right"
         autoClose={3000}
         hideProgressBar={true}
         transition={Flip}

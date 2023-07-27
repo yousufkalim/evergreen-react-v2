@@ -6,7 +6,6 @@
   padding: 1% 10%;
   position: fixed;
   background: transparent;
-  /* background-color: var(--primary); */
   /* box-shadow: 0px 5px 28px -2px rgba(0, 0, 0, 0.2); */
   z-index: 999999999;
 }
@@ -15,6 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 .navbarLogo {
   width: 100%;
@@ -26,14 +26,15 @@
   align-items: center;
 }
 .navbarMenuDiv {
-  width: 60%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   list-style: none;
   color: #b7b7b7;
   font-weight: 500;
   font-size: 1.2rem;
+  gap: 2%;
 }
 .navbarMenuServiveDiv {
   display: flex;
@@ -54,6 +55,7 @@
 }
 .navbarMenuServiveDropdown {
   position: relative;
+  cursor: pointer;
 }
 #a {
   position: absolute;
@@ -67,7 +69,7 @@
   font-size: 1.1rem;
 }
 .navbarMenuServiveDropdown:hover #a {
-  height: 110px;
+  height: 135px;
   background: #1e1e1e;
   padding-left: 10%;
   border-bottom-left-radius: 10px;
@@ -77,7 +79,6 @@
 }
 .navbarButtonContainer {
   width: 10%;
-  background: #f7c844;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -86,9 +87,10 @@
   cursor: pointer;
   text-decoration: none;
   transition: 0.5s;
+  background: #c1fe00;
 }
 .navbarButtonContainer:hover {
-  background: #e0ad21;
+  background: #dcff68;
 }
 .navbarButton {
   width: 80%;
@@ -127,14 +129,14 @@
   width: 10px;
   margin: 4px 0;
   height: 3px;
-  background-color: #f7c844;
+  background-color: #c1fe00;
   transition: 0.4s;
 }
 .bar2 {
   width: 25px;
   margin: 4px 0;
   height: 3px;
-  background-color: #f7c844;
+  background-color: #c1fe00;
   transition: 0.4s;
 }
 .bar3 {
@@ -147,7 +149,7 @@
 }
 .abc {
   width: 15px;
-  background-color: #f7c844;
+  background-color: #c1fe00;
 }
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-1px, -1px);
@@ -198,18 +200,37 @@
   color: #b7b7b7;
   text-decoration: none;
 }
+.gradient {
+  padding: 1% 2%;
+  border-radius: 100px;
+  gap: 10px;
+
+  background: linear-gradient(90deg, rgba(193, 92, 255, 0.1) 0%, rgba(255, 84, 84, 0.1) 100%);
+}
 #menuId {
-  color: #b7b7b7;
+  color: #ffffff;
   font-weight: 300;
   transition: 0.5s;
+}
+#gradientText {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #c15cff, #ff5454);
+  font-weight: 300;
+  transition: 0.5s;
+  width: fit-content;
+}
+#gradientText:hover {
+  color: #ffffff;
 }
 #menuId:hover {
   color: #ffffff;
 }
 #disableId {
-  color: #f7c844;
+  color: #c1fe00;
   transition: 0.5s;
-  font-weight: 600;
+  font-weight: 6000;
 }
 
 @media only screen and (max-width: 1660px) {
@@ -258,7 +279,7 @@
     top: 2.5%;
   }
   .navbarContainer {
-    padding: 1.5% 5%;
+    padding: 2.5% 5%;
   }
   .navbarLogoDiv {
     width: 20%;

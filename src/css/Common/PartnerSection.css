@@ -15,6 +15,9 @@
 .partnerSectionGrid img {
   width: 80%;
 }
+.partnerSectionContainer {
+  background-color: #1e1e1e;
+}
 @media only screen and (max-width: 1660px) {
   .partnerSectionContainer {
     padding: 2% 5%;

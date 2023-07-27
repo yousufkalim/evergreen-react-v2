@@ -19,13 +19,15 @@
 .projectCardHoverDiv {
   position: absolute;
   width: 50%;
-  background: #f7c844;
+  opacity: 0.8999999761581421;
+  background: linear-gradient(272deg, #a5d708 0%, #d8ff5e 100%);
   opacity: 0.9;
   height: 100%;
   padding: 5%;
   z-index: 1;
   transition: 0.5s;
   overflow: hidden;
+  color: #1e1e1e !important;
 }
 .projectCardHoverDiv:hover {
   opacity: 1;
@@ -40,21 +42,21 @@
 .projectCardDivider {
   height: 3px;
   width: 8%;
-  background: #fbfbfb;
+  background: #1e1e1e;
   margin-right: 2%;
 }
 .projectCardNumber {
-  color: #fbfbfb;
+  /* color: #fbfbfb; */
   font-size: 1.2rem;
 }
 .projectCardTitle {
-  color: #fbfbfb;
+  /* color: #fbfbfb; */
   margin: 3% 0;
   font-weight: 500;
   font-size: 2.5rem;
 }
 .projectCardDesp {
-  color: #fbfbfb;
+  /* color: #fbfbfb; */
   font-weight: 400;
   width: 80%;
 }
@@ -77,6 +79,7 @@
   width: 20%;
 }
 .projectCardBtn {
+  text-decoration: none;
   border: none;
   background: transparent;
   border-radius: 40px;
@@ -84,6 +87,7 @@
   font-size: 0.9rem;
   cursor: pointer;
   width: 80%;
+  color: #1e1e1e;
 }
 .projectCardBgImage {
   object-fit: cover;

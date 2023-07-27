@@ -1,5 +1,16 @@
-.serviceHeaderContainer {
+.webDev_first_two_section {
+  background: radial-gradient(
+      70.71% 70.71% at 50% 50%,
+      rgba(193, 254, 0, 0.08) 0%,
+      rgba(193, 254, 0, 0) 100%
+    ),
+    #1e1e1e;
+}
+.custom_extra_section {
   background: #1e1e1e;
+}
+.serviceHeaderContainer {
+  /* background: #1e1e1e; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -11,15 +22,25 @@
 }
 .serviceHeaderTitle {
   color: #fbfbfb;
-  width: 100%;
+  width: 60%;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.serviceHeaderTitle_2 {
+  color: #fbfbfb;
+  width: 57%;
   font-size: 2.5rem;
   text-align: center;
 }
 .serviceHeaderDesp {
-  width: 45%;
+  width: 41%;
   text-align: center;
   color: #b7b7b7;
   margin: 1% 0;
+}
+.serviceHeaderDesp_span {
+  color: #1e1e1e !important;
+  background: #c1fe00 !important;
 }
 @media only screen and (max-width: 1366px) {
   .serviceHeaderDesp {
@@ -34,6 +55,7 @@
 @media only screen and (max-width: 900px) {
   .serviceHeaderTitle {
     font-size: 2rem;
+    width: 88%;
   }
   .serviceHeaderDesp {
     width: 80%;
@@ -56,6 +78,11 @@
 }
 @media only screen and (max-width: 480px) {
   .serviceHeaderTitle {
-    font-size: 1.3rem;
+    font-size: 1.9rem;
+    width: 98%;
+  }
+  .serviceHeaderTitle_2 {
+    font-size: 1.8rem;
+    width: 100%;
   }
 }

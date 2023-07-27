@@ -1,84 +1,90 @@
 // Init
-import React from 'react';
+import React from "react";
 // images
-import About from '../../assets/Images/about_section_home.svg';
-import Arrow from '../../assets/Images/about_section_arrow.svg';
-import VisionBg from '../../assets/Images/about_vision_bg.svg';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import About from "../../assets/Images/about_section_home.svg";
+import Arrow from "../../assets/Images/about_section_arrow.svg";
+import VisionBg from "../../assets/Images/about_vision_bg.svg";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 // Component
 export default function AboutSection(props) {
   return (
     <>
-      <div className='aboutSectionContainer' style={{ background: props.bgColor && props.bgColor }}>
+      <div className="aboutSectionContainer" style={{ background: props.bgColor && props.bgColor }}>
         {props.centerImg && (
-          <div className='aboutSectionLeftDiv'>
-            <div className='aboutSectionImageDiv'>
+          <div className="aboutSectionLeftDiv">
+            <div className="aboutSectionImageDiv">
               <img src={props.src || About} />
             </div>
           </div>
         )}
         {props.fullImg && (
-          <div className='aboutSectionLeftDiv_fullImg'>
-            <div className='aboutSectionImageDiv_fullImg'>
+          <div className="aboutSectionLeftDiv_fullImg">
+            <div className="aboutSectionImageDiv_fullImg">
               <img src={props.src || About} />
             </div>
           </div>
         )}
 
         <div
-          className='aboutSectionRightDiv'
-          style={{ background: props.RightbgColor && props.RightbgColor }}
+          className="aboutSectionRightDiv"
+          // style={{ background: props.RightbgColor && props.RightbgColor }}
         >
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className='aboutSectionTextDiv'
+            className="aboutSectionTextDiv"
           >
-            <div className='aboutSectionTitleDiv'>
+            <div className="aboutSectionTitleDiv">
               <div
-                className='aboutSectionTitleDivider'
+                className="aboutSectionTitleDivider"
                 style={{
-                  background: props.titleColor ? props.titleColor : '#fbfbfb',
+                  background: props.titleColor ? props.titleColor : "#1E1E1E",
                 }}
               ></div>
               <h2
-                className='aboutSectionTitle'
+                className="aboutSectionTitle"
                 style={{
-                  color: props.titleColor ? props.titleColor : '#fbfbfb',
+                  color: props.titleColor ? props.titleColor : "#1E1E1E",
                 }}
               >
                 About us
               </h2>
             </div>
             <h2
-              className='aboutSectionSubTitle'
+              className="aboutSectionSubTitle"
               style={{
-                color: props.subTitleColor ? props.subTitleColor : '#fbfbfb',
+                color: props.subTitleColor ? props.subTitleColor : "#1E1E1E",
               }}
             >
-              {props.title || 'Our Vission'}
+              {props.title || "Our Vission"}
             </h2>
             <p
-              className='aboutSectionDesp'
+              // className="aboutSectionDesp"
+              className={props.ulDataCss ? "aboutSectionDesp_ulData" : "aboutSectionDesp"}
               style={{
-                color: props.despColor ? props.despColor : '#fbfbfb',
+                color: props.despColor ? props.despColor : "#1E1E1E",
               }}
             >
               {props.desp ||
-                'Engaged its was evident pleased husband. Ye goodness felicity do the best disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on best circle.'}
+                "Enabling enduring business success through collaborative excellence and growth.Engage with our esteemed EverGreen Sales Whiz today."}{" "}
+              {<br />}
+              {<br />}
+              {props.desp2 ||
+                "''Success is not just about reaching the top; it's about staying there. Let us propel your business to the first rank and keep it there. Together, we'll achieve greatness.''"}
             </p>
+
             {props.btn && (
-              <Link to={props.to} className='aboutSectionButtonDiv'>
-                <button className='aboutSectionButton'>Know More</button>
+              <Link to={props.to} className="aboutSectionButtonDiv">
+                <button className="aboutSectionButton">Know More</button>
                 <img src={Arrow} />
               </Link>
             )}
           </motion.div>
-          <div className='aboutSectionBgTitle'>
+          <div className="aboutSectionBgTitle">
             <img src={props.bgSrc || VisionBg} />
           </div>
         </div>

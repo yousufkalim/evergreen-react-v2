@@ -1,6 +1,8 @@
 .aboutSectionContainer {
   width: 100%;
   display: flex;
+  background: linear-gradient(270deg, rgba(165, 215, 8, 1) 0%, rgba(216, 255, 94, 1) 100%),
+    rgba(0, 0, 0, 0.4);
 }
 .aboutSectionLeftDiv {
   width: 45%;
@@ -36,7 +38,7 @@
 }
 .aboutSectionRightDiv {
   width: 55%;
-  /* background: #f7c844; */
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +73,17 @@
   width: 60%;
   margin: 2% 0;
   opacity: 0.8;
+}
+.aboutSectionDesp_ulData {
+  color: #fbfbfb;
+  font-weight: 400;
+  width: 100%;
+  margin: 2% 0;
+  opacity: 0.8;
+}
+.About_ul_data {
+  padding-left: 6% !important;
+  width: 100%;
 }
 .aboutSectionButtonDiv {
   background: #fbfbfb;
@@ -180,6 +193,9 @@
   .aboutSectionTitle {
     font-size: 1.2rem;
   }
+  .aboutSectionDesp_ulData {
+    font-size: 0.9rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .aboutSectionDesp {
@@ -214,6 +230,6 @@
     width: 45%;
   }
   .aboutSectionTextDiv {
-    padding: 5%;
+    padding: 0% 0% 0% 10%;
   }
 }
