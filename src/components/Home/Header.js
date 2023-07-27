@@ -5,14 +5,17 @@ import { Link } from "react-router-dom";
 import { ReactComponent as Arrow } from "../../assets/Images/about_section_arrow.svg";
 import Mouse from "../../assets/Images/Mouse.gif";
 // Component
-export default function Header() {
+export default function Header(props) {
+  const { floating } = props;
   return (
     <div className="homeHeaderContainer">
-      <div className="homeHeaderFloatingBtnDiv">
-        <button className="freelancer">Freelancer</button>
-        <button className="upwork"> Upwork</button>
-        <button className="fiverr">Fiverr</button>
-      </div>
+      {floating && (
+        <div className="homeHeaderFloatingBtnDiv">
+          <button className="freelancer">Freelancer</button>
+          <button className="upwork"> Upwork</button>
+          <button className="fiverr">Fiverr</button>
+        </div>
+      )}
       <div className="homeHeaderTextDiv">
         <h2 className="homeHeaderTitle">
           Amplify Your <br /> business's potential with <br /> Staff
