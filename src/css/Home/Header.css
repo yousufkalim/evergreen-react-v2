@@ -1,6 +1,7 @@
 /* Header Component Style */
 .homeHeaderContainer {
-  background: url(../../assets/Images/background_effectV2.png), rgba(30, 30, 30, 0.6);
+  background: url(../../assets/Images/background_effectV2.png),
+    rgba(30, 30, 30, 0.6);
   background-blend-mode: hard-light, normal;
   background-size: cover;
   height: 100vh;
@@ -11,6 +12,7 @@
   height: 100%;
   width: 100%;
 }
+
 .homeHeaderBgImage {
   object-fit: cover;
   width: 100%;
@@ -48,14 +50,15 @@
   margin-top: 2%;
 }
 .homeHeaderBtnDiv {
-  width: 18%;
+  width: 20%;
   background: #c1fe00;
-  padding: 0.5% 1%;
+  padding: 1%;
   border-radius: 40px;
   margin: 3% 0 0 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1%;
   cursor: pointer;
   text-decoration: none;
   transition: 0.5s;
@@ -86,6 +89,34 @@
 .homeHeaderMouseGif {
   width: 30%;
 }
+.homeHeaderFloatingBtnDiv {
+  position: fixed;
+  top: 80%;
+  left: 1.5%;
+  transform: rotate(-90deg);
+  transform-origin: left;
+  display: flex;
+  align-items: flex-start;
+}
+.homeHeaderFloatingBtnDiv button {
+  padding: 15px 36px;
+  border: 1px solid #ccc;
+  color: #fbfbfb;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+}
+.fiverr {
+  background-color: #2bbe76;
+}
+.upwork {
+  background-color: #22a71b;
+}
+.freelancer {
+  background-color: #4f52ff;
+}
 @media only screen and (max-width: 1500px) {
   .homeHeaderTextDiv {
     top: 10%;
@@ -106,17 +137,44 @@
     font-size: 18px;
     margin-top: 2%;
   }
+  .homeHeaderFloatingBtnDiv {
+    left: 2%;
+  }
+  .homeHeaderFloatingBtnDiv button {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .homeHeaderBtnDiv {
+    width: 23%;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .homeHeaderBtnDiv {
-    width: 18%;
-    padding: 1% 1.5%;
+    width: 27%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .homeHeaderBtnDiv {
+    width: 30%;
+  }
+  .homeHeaderFloatingBtnDiv {
+    left: 2.5%;
+  }
+  .homeHeaderFloatingBtnDiv button {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .homeHeaderBtnDiv {
+    width: 35%;
   }
 }
 @media only screen and (max-width: 768px) {
-  .homeHeaderBtnDiv {
-    width: 41%;
+  .homeHeaderFloatingBtnDiv {
+    display: none;
   }
+
   .homeHeaderTitle {
     font-size: 22px;
     font-weight: 600;
@@ -128,7 +186,7 @@
     width: 98%;
   }
   .homeHeaderBtnDiv {
-    width: 90%;
+    width: 50%;
     margin: 5% 0 0 0;
   }
   .homeHeaderMouseDiv {
