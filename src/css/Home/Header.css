@@ -48,7 +48,7 @@
   margin-top: 2%;
 }
 .homeHeaderBtnDiv {
-  width: 22%;
+  width: 18%;
   background: #c1fe00;
   padding: 0.5% 1%;
   border-radius: 40px;
@@ -94,7 +94,7 @@
     margin-top: 5%;
   }
   .homeHeaderTitle {
-    font-size: 44px;
+    font-size: 42px;
     font-weight: 700;
     line-height: 60px;
   }
@@ -118,7 +118,7 @@
     width: 41%;
   }
   .homeHeaderTitle {
-    font-size: 23px;
+    font-size: 22px;
     font-weight: 600;
     line-height: 40px;
     width: 98%;

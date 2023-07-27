@@ -59,23 +59,24 @@
   margin-right: 2%;
 }
 .aboutSectionTitle {
-  font-weight: 500;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 22px;
 }
 .aboutSectionSubTitle {
   color: #fbfbfb;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 48px;
 }
 .aboutSectionDesp {
   color: #fbfbfb;
   font-weight: 400;
-  width: 60%;
+  font-size: 20px;
+  width: 67%;
   margin: 2% 0;
-  opacity: 0.8;
 }
 .aboutSectionDesp_ulData {
   color: #fbfbfb;
+  font-size: 20px;
   font-weight: 400;
   width: 100%;
   margin: 2% 0;
@@ -141,13 +142,17 @@
     font-size: 1.4rem;
   }
   .aboutSectionSubTitle {
-    font-size: 2.2rem;
+    font-size: 25px;
   }
   .aboutSectionDesp {
     width: 80%;
+    font-size: 18px;
   }
   .aboutSectionButtonDiv {
     width: 30%;
+  }
+  .aboutSectionDesp_ulData {
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 1112px) {

@@ -19,11 +19,14 @@
 }
 .serviceHeaderPath {
   color: #fbfbfb;
+  font-size: 24px;
+  font-weight: 500;
 }
 .serviceHeaderTitle {
   color: #fbfbfb;
   width: 60%;
-  font-size: 2.5rem;
+  font-size: 64px;
+  font-weight: 700;
   text-align: center;
 }
 .serviceHeaderTitle_2 {
@@ -33,10 +36,12 @@
   text-align: center;
 }
 .serviceHeaderDesp {
-  width: 41%;
+  width: 57%;
   text-align: center;
   color: #b7b7b7;
   margin: 1% 0;
+  font-size: 22px;
+  font-weight: 500;
 }
 .serviceHeaderDesp_span {
   color: #1e1e1e !important;
@@ -44,7 +49,14 @@
 }
 @media only screen and (max-width: 1366px) {
   .serviceHeaderDesp {
-    width: 60%;
+    width: 61%;
+    font-size: 17px;
+  }
+  .serviceHeaderPath {
+    font-size: 20px;
+  }
+  .serviceHeaderTitle {
+    font-size: 42px;
   }
 }
 @media only screen and (max-width: 1024px) {

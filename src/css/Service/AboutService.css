@@ -49,20 +49,20 @@
 }
 .aboutServiceTitle {
   color: #c1fe00;
-  font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 22px;
+  font-weight: 600;
 }
 .aboutServiceSubTitle {
   color: #fbfbfb;
   font-weight: 500;
-  font-size: 2rem;
-  width: 56%;
+  width: 78%;
+  font-size: 48px;
 }
 .aboutServiceSubTitle_fontchange {
   color: #fbfbfb;
+  font-size: 48px;
   font-weight: 500;
-  font-size: 2rem;
-  width: 56%;
+  width: 65%;
   /* Font Color CSS */
   background: var(--linear-primary, linear-gradient(272deg, #a5d708 0%, #d8ff5e 100%));
   background-clip: text;
@@ -72,10 +72,11 @@
 
 .aboutServiceDesp {
   color: #b7b7b7;
+  font-size: 20px;
   font-weight: 400;
-  width: 60%;
+  width: 63%;
   margin: 2% 0;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 .aboutServiceButtonDiv {
   background: #c1fe00;
@@ -122,24 +123,27 @@
 @media only screen and (max-width: 1460px) {
   .aboutServiceSubTitle {
     width: 80%;
+    font-size: 38px;
   }
   .aboutServiceDesp {
-    width: 80%;
+    width: 81%;
+    font-size: 18px;
   }
   .aboutServiceButtonDiv {
     width: 30%;
   }
 }
 @media only screen and (max-width: 1366px) {
-  .aboutServiceSubTitle {
-    width: 80%;
-  }
-  .aboutServiceDesp {
-    width: 90%;
-  }
   .aboutServiceButtonDiv {
     padding: 1.5% 3%;
     width: 38%;
+  }
+  .aboutServiceTitle {
+    font-size: 19px;
+  }
+  .aboutServiceSubTitle_fontchange {
+    width: 66%;
+    font-size: 38px;
   }
 }
 @media only screen and (max-width: 1200px) {

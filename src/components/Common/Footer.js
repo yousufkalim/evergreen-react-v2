@@ -25,10 +25,10 @@ export default function Footer() {
           <div className="footerRightSection">
             <div className="footerMenuDiv">
               <h2>Navigate</h2>
-              <Link className="footerLinks" to="/about">
+              <Link className="footerLinks" to="/project">
                 Projects
               </Link>
-              <Link className="footerLinks" to="/project">
+              <Link className="footerLinks" to="/about">
                 About
               </Link>
               <Link className="footerLinks" to="/ourvalues">
@@ -40,16 +40,16 @@ export default function Footer() {
             </div>
             <div className="footerMenuDiv">
               <h2>Focus</h2>
-              <Link className="footerLinks" to="/webdevelopment">
+              <Link className="footerLinks" to="/appdevelopment">
                 App Design
               </Link>
               <Link className="footerLinks" to="/appdevelopment">
                 App Development
               </Link>
-              <Link className="footerLinks" to="/customsolutions">
+              <Link className="footerLinks" to="/webdevelopment">
                 Web Development
               </Link>
-              <Link className="footerLinks" to="/customsolutions">
+              <Link className="footerLinks" to="/webdevelopment">
                 Website Design
               </Link>
             </div>

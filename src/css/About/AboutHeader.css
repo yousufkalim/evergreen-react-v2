@@ -29,16 +29,20 @@
 }
 .aboutHeaderTextDiv h2 {
   color: #fbfbfb;
-  font-size: 2.3rem;
+  font-size: 48px;
   font-weight: 400;
 }
 .aboutHeaderTextDiv h2 span {
   font-weight: 700;
   font-size: 2.8rem;
+  font-size: 64px;
+  font-weight: 700;
 }
 .aboutHeaderTextDiv p {
   color: #b7b7b7;
-  width: 80%;
+  font-size: 22px;
+  font-weight: 500;
+  width: 100%;
   margin: 3% 0;
 }
 .aboutHeaderBtnDiv {
@@ -101,6 +105,16 @@
 @media only screen and (max-width: 1500px) {
   .aboutHeaderBtnDiv {
     width: 30%;
+  }
+  .aboutHeaderTextDiv h2 {
+    font-size: 38px;
+  }
+  .aboutHeaderTextDiv h2 span {
+    font-size: 46px;
+  }
+  .aboutHeaderTextDiv p {
+    font-size: 18px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 1200px) {
