@@ -49,7 +49,16 @@ export default function Navbar() {
               <li id={menuRoute === "/" ? "disableId" : "menuId"}>Home</li>
             </Link>
             <div className="navbarMenuServiveDropdown">
-              <div className="navbarMenuServiveDiv">
+              <div
+                // className="navbarMenuServiveDiv"
+                className={
+                  menuRoute === "/webdevelopment" ||
+                  menuRoute === "/appdevelopment" ||
+                  menuRoute === "/customsolutions"
+                    ? "navbarMenuServiveBorder"
+                    : "navbarMenuServiveDiv"
+                }
+              >
                 <li
                   id={
                     menuRoute === "/webdevelopment" ||
@@ -255,7 +264,7 @@ export default function Navbar() {
                     >
                       <div style={{ fontSize: "1.4rem", lineHeight: "100%" }}>
                         {" "}
-                        CUSTOM SOLUTIONS
+                        Sales & Marketing Solution
                       </div>
                     </ListItemText>
                   </Link>
@@ -266,7 +275,7 @@ export default function Navbar() {
               <Link className="navbarMobMenuLink" to={`/project`}>
                 <ListItemText
                   id={menuRoute === "/project" ? "disableId" : "menuId"}
-                  primary="Our Projects"
+                  primary="Hire Talent Scheme"
                 />
               </Link>
             </ListItemButton>

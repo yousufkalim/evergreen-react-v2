@@ -42,6 +42,17 @@
   gap: 5px;
   text-decoration: none;
 }
+.navbarMenuServiveBorder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b7b7b7;
+  gap: 5px;
+  text-decoration: none;
+  border-bottom: 2px solid #c1fe00;
+  white-space: nowrap;
+  padding: 0 1% 1% 1%;
+}
 .navbarMenuServiveDiv li {
   font-weight: 300;
   transition: 0.5s;
@@ -275,8 +286,8 @@
     padding: 2% 5% 1% 5%;
   }
   .navbarMenuDiv {
-    width: 75%;
-    font-size: 0.9rem;
+    width: 90%;
+    font-size: 12px;
   }
   .navbarButtonContainer {
     width: 15%;
