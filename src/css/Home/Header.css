@@ -138,15 +138,22 @@
     margin-top: 2%;
   }
   .homeHeaderFloatingBtnDiv {
-    left: 2%;
+    left: 1.7%;
   }
   .homeHeaderFloatingBtnDiv button {
     font-size: 18px;
+    padding: 12px 28px;
   }
 }
 @media only screen and (max-width: 1366px) {
   .homeHeaderBtnDiv {
     width: 23%;
+  }
+  .homeHeaderFloatingBtnDiv {
+    top: 70%;
+  }
+  .homeHeaderFloatingBtnDiv button {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -159,15 +166,18 @@
     width: 30%;
   }
   .homeHeaderFloatingBtnDiv {
-    left: 2.5%;
+    left: 2%;
   }
   .homeHeaderFloatingBtnDiv button {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 900px) {
   .homeHeaderBtnDiv {
     width: 35%;
+  }
+  .homeHeaderFloatingBtnDiv {
+    left: 2.3%;
   }
 }
 @media only screen and (max-width: 768px) {

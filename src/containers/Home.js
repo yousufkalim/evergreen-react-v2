@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <Header />
+      <Header floating />
       <ServiceProvided />
       <AboutSection centerImg btn RightbgColor="#c1fe00" to="/about" />
       <PartnerSection />
