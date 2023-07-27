@@ -20,6 +20,7 @@ export default function AppDev() {
           src={AboutServiceApp}
           title="We are Best App Development company"
           to="/contactus"
+          servicetitle="About Service"
           disc="Custom design & development for web, mobile, and SaaS apps. Leveraging MEAN, MERN, LAMP, and Django stacks for web apps. Expertise in iOS (Swift, Objective-C), Android (Flutter, Kotlin), and React Native stacks for mobile apps. Building scalable SaaS apps using serverless, microservices, and Blockchain stacks. Innovate with us."
         />
       </div>

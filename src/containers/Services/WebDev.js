@@ -14,7 +14,7 @@ export default function WebDev() {
       <Navbar />
       <div className="webDev_first_two_section">
         <ServiceHeader path="Service > Web Development & design" title="Web Development & design" />
-        <AboutService btntxt="Let's Talk" to="/contactus" />
+        <AboutService servicetitle="About Service" btntxt="Let's Talk" to="/contactus" />
       </div>
       <OurProcess />
       <ServiceProvided spantxt=" " h2="More Services" divider />

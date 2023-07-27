@@ -70,21 +70,22 @@
 }
 .valuesSectionSubTitle {
   color: #c1fe00;
-  font-size: 1.3rem;
+  font-size: 22px;
   font-weight: 600;
 }
 .valuesSectionTitle {
   color: #fbfbfb;
-  font-size: 2.5rem;
+  font-size: 48px;
   font-weight: 500;
   margin: 3% 0;
 }
 .valuesSectionDespDiv {
-  width: 80%;
+  width: 83%;
 }
 .valuesSectionDespDiv p {
   color: #b7b7b7;
   font-weight: 400;
+  font-size: 20px;
 }
 .valuesSectionDespDivReverse {
   width: 80%;
@@ -92,8 +93,22 @@
 .valuesSectionDespDivReverse p {
   color: #b7b7b7;
   font-weight: 400;
+  font-size: 20px;
 }
-
+@media only screen and (max-width: 1366px) {
+  .valuesSectionSubTitle {
+    font-size: 18px;
+  }
+  .valuesSectionTitle {
+    font-size: 38px;
+  }
+  .valuesSectionDespDiv p {
+    font-size: 18px;
+  }
+  .valuesSectionDespDivReverse p {
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .valuesSectionSubTitle {
     font-size: 1rem;

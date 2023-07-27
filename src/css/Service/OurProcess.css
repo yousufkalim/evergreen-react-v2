@@ -22,14 +22,15 @@
 }
 .OurProcessTitle {
   color: #c1fe00;
+  font-size: 22px;
   font-weight: 600;
   line-height: 174.5%;
-  font-size: 1.2rem;
 }
 .OurProcessSubTitle {
   color: #fff;
+  font-size: 48px;
+  font-style: normal;
   font-weight: 500;
-  font-size: 2.3rem;
   margin: 2% 0;
 }
 .OurProcessImageDiv {
@@ -51,11 +52,14 @@
   .OurProcessContainer {
     padding: 5% 3% 5% 5%;
   }
+  .OurProcessTitle {
+    font-size: 18px;
+  }
+  .OurProcessSubTitle {
+    font-size: 36px;
+  }
 }
 @media only screen and (max-width: 1200px) {
-  .OurProcessSubTitle {
-    font-size: 2rem;
-  }
 }
 @media only screen and (max-width: 900px) {
   .OurProcessContainer {

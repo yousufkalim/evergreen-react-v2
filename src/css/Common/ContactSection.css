@@ -33,12 +33,13 @@
 .contactSectionHeaderDiv h2 {
   color: #c1fe00;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 48px;
 }
 .contactSectionHeaderDiv p {
   color: #b7b7b7;
   font-weight: 400;
-  width: 60%;
+  font-size: 20px;
+  width: 62%;
   text-align: center;
   margin: 1% 0;
 }
@@ -56,11 +57,13 @@
 .contactSectionLinksHeadingDiv h2 {
   color: #fbfbfb;
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 36px;
 }
 .contactSectionLinksHeadingDiv p {
   color: #b7b7b7;
-  width: 70%;
+  font-size: 16px;
+  font-weight: 400;
+  width: 69%;
   margin: 3% 0;
   line-height: 119%;
 }
@@ -70,7 +73,7 @@
 .contactSectionLink {
   display: flex;
   align-items: center;
-  margin: 3% 0;
+  margin: 3% 0 8% 0%;
   text-decoration: none;
 }
 .contactSectionLink img {
@@ -81,11 +84,14 @@
 }
 .contactSectionLinkText p {
   color: #b7b7b7;
-  font-size: 1.2rem;
+  font-size: 20px;
+  font-weight: 400;
 }
 .contactSectionLinkText span {
   color: #fbfbfb;
   font-size: 1rem;
+  font-size: 20px;
+  font-weight: 500;
 }
 .contactSectionRightContent {
   width: 65%;
@@ -239,6 +245,21 @@ textarea::placeholder {
 @media only screen and (max-width: 1366px) {
   .contactSectionFormInputDiv textarea {
     margin-bottom: 1%;
+  }
+  .contactSectionHeaderDiv h2 {
+    font-size: 34px;
+  }
+  .contactSectionHeaderDiv p {
+    font-size: 18px;
+  }
+  .contactSectionLinksHeadingDiv h2 {
+    font-size: 28px;
+  }
+  .contactSectionLinkText p {
+    font-size: 18px;
+  }
+  .contactSectionLinkText span {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 1200px) {

@@ -24,7 +24,7 @@
 }
 .OurValuesTitleDiv h2 {
   color: #f8f8f8;
-  font-size: 2.5rem;
+  font-size: 64px;
   font-weight: 700;
 }
 .OurValuesTitleDiv h2 span {
@@ -48,6 +48,12 @@
 @media only screen and (max-width: 1366px) {
   .OurValuesMouseGif img {
     width: 10%;
+  }
+  .OurValuesTitleDiv h2 {
+    font-size: 46px;
+  }
+  .valuesSectionSubTitle {
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 900px) {

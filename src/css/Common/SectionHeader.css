@@ -5,28 +5,31 @@
   align-items: center;
   text-align: center;
   width: 100%;
+  padding-top: 3%;
 }
 .sectionHeaderContainer p {
   color: #c1fe00;
   font-weight: 600;
+  font-size: 22px;
 }
 .sectionHeaderContainer h2 {
   color: #fbfbfb;
   font-weight: 500;
-  font-size: 1.5rem;
-  width: 39%;
+  font-size: 48px;
+  width: 73%;
   padding: 0.5% 0;
 }
 .sectionHeaderContainer h2 span {
   color: #c1fe00;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 48px;
 }
 .sectionHeaderTitleDiv {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: center;
+  padding-bottom: 1%;
 }
 .sectionHeaderTitleDivider {
   height: 3px;
@@ -38,6 +41,14 @@
 @media only screen and (max-width: 1366px) {
   .sectionHeaderContainer h2 {
     width: 44%;
+    font-size: 25px;
+  }
+  .sectionHeaderContainer h2 span {
+    color: #c1fe00;
+    font-size: 25px;
+  }
+  .sectionHeaderContainer p {
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 900px) {

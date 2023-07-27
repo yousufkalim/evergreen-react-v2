@@ -39,7 +39,7 @@ export default function CustomSolution() {
         />
         <AboutService
           src={AboutServiceCustom}
-          title="We are Best in Sales & Marketing Solution"
+          title="We are Best in Sales & Marketing"
           servicetitle="About Service"
           btntxt="Get This Service"
           to="/contactus"

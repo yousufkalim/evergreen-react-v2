@@ -17,7 +17,7 @@ export default function PartnerSection() {
         <div>
           <SectionHeader spantxt=" " h1="With yours trust" h2="Amazing Partners" />
         </div>
-        <div style={{ marginTop: "3%" }}>
+        <div style={{ margin: "6% 0%" }}>
           <Grid className="partnerSectionGridContainer" container spacing={1}>
             <Grid className="partnerSectionGrid" xs={12} sm={4} md={2}>
               <img src={Airbnb} />
