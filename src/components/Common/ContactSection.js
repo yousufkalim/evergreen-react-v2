@@ -87,8 +87,15 @@ export default function ContactSection() {
   };
   const sendEmail = (e) => {
     e.preventDefault();
-    {
-      emailjs.sendForm("service_m0ydgq9", "template_2ol3ftd", e.target, "RaQx7FccGRBjX6Sqp").then(
+
+    emailjs
+      .sendForm(
+        "service_bqk7ncn",
+        "template_64h2zij",
+        e.target,
+        "RA1551YNJv_HEIHgQ"
+      )
+      .then(
         (result) => {
           resetForm();
           return result;
@@ -97,7 +104,23 @@ export default function ContactSection() {
           return error;
         }
       );
-    }
+
+    // emailjs
+    //   .sendForm(
+    //     "service_m0ydgq9",
+    //     "template_2ol3ftd",
+    //     e.target,
+    //     "RaQx7FccGRBjX6Sqp"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       resetForm();
+    //       return result;
+    //     },
+    //     (error) => {
+    //       return error;
+    //     }
+    //   );
 
     resetForm();
     toast.success(
@@ -127,7 +150,8 @@ export default function ContactSection() {
       errors: errors || {},
     }));
   };
-  const hasError = (field) => (formState.touched[field] && formState.errors[field] ? true : false);
+  const hasError = (field) =>
+    formState.touched[field] && formState.errors[field] ? true : false;
 
   return (
     <>
@@ -145,7 +169,8 @@ export default function ContactSection() {
           >
             <h2>Contact us</h2>
             <p>
-              Reach Out to Us Now and Receive a Free Consultation from Our Ever Green Sales Whiz
+              Reach Out to Us Now and Receive a Free Consultation from Our Ever
+              Green Sales Whiz
             </p>
           </motion.div>
           <div className="contactSectionContentDiv">
@@ -168,7 +193,10 @@ export default function ContactSection() {
                     <span>+92 313 5098197</span>
                   </div>
                 </a>
-                <a href="mailto:adeel.baig@falconconsulting.fr" className="contactSectionLink">
+                <a
+                  href="mailto:adeel.baig@falconconsulting.fr"
+                  className="contactSectionLink"
+                >
                   <img src={Email} />
                   <div className="contactSectionLinkText">
                     <p>Email</p>
@@ -185,7 +213,11 @@ export default function ContactSection() {
               className="contactSectionRightContent"
             >
               <form onSubmit={sendEmail} className="contactSectionFormDiv">
-                <Grid className="contactSectionFormContainer" container spacing={1}>
+                <Grid
+                  className="contactSectionFormContainer"
+                  container
+                  spacing={1}
+                >
                   <Grid className="contactSectionFormGrid" xs={12} sm={5.8}>
                     <div className="contactSectionFormInputDiv">
                       <label
@@ -193,7 +225,8 @@ export default function ContactSection() {
                           color:
                             activeName === "name"
                               ? "#C1FE00"
-                              : !hasError("name") && formState.values.name === ""
+                              : !hasError("name") &&
+                                formState.values.name === ""
                               ? "#f8f8f8"
                               : hasError("name")
                               ? "#FF603D"
@@ -221,7 +254,9 @@ export default function ContactSection() {
                         placeholder="Your Name"
                       />
                       {hasError("name") && (
-                        <div className="formValidationError">{formState.errors.name[0]}</div>
+                        <div className="formValidationError">
+                          {formState.errors.name[0]}
+                        </div>
                       )}
                     </div>
                   </Grid>
@@ -232,7 +267,8 @@ export default function ContactSection() {
                           color:
                             activeName === "company"
                               ? "#C1FE00"
-                              : !hasError("company") && formState.values.company === ""
+                              : !hasError("company") &&
+                                formState.values.company === ""
                               ? "#f8f8f8"
                               : hasError("company")
                               ? "#FF603D"
@@ -259,7 +295,9 @@ export default function ContactSection() {
                         placeholder="Your Company"
                       />
                       {hasError("company") && (
-                        <div className="formValidationError">{formState.errors.company[0]}</div>
+                        <div className="formValidationError">
+                          {formState.errors.company[0]}
+                        </div>
                       )}
                     </div>
                   </Grid>
@@ -270,7 +308,8 @@ export default function ContactSection() {
                           color:
                             activeName === "email"
                               ? "#C1FE00"
-                              : !hasError("email") && formState.values.email === ""
+                              : !hasError("email") &&
+                                formState.values.email === ""
                               ? "#f8f8f8"
                               : hasError("email")
                               ? "#FF603D"
@@ -297,7 +336,9 @@ export default function ContactSection() {
                         placeholder="acb@xyz.com"
                       />
                       {hasError("email") && (
-                        <div className="formValidationError">{formState.errors.email[0]}</div>
+                        <div className="formValidationError">
+                          {formState.errors.email[0]}
+                        </div>
                       )}
                     </div>
                   </Grid>
@@ -308,7 +349,8 @@ export default function ContactSection() {
                           color:
                             activeName === "phone"
                               ? "#C1FE00"
-                              : !hasError("phone") && formState.values.phone === ""
+                              : !hasError("phone") &&
+                                formState.values.phone === ""
                               ? "#f8f8f8"
                               : hasError("phone")
                               ? "#FF603D"
@@ -342,7 +384,9 @@ export default function ContactSection() {
                         placeholder="Enter Number"
                       />
                       {hasError("phone") && (
-                        <div className="formValidationError">{formState.errors.phone[0]}</div>
+                        <div className="formValidationError">
+                          {formState.errors.phone[0]}
+                        </div>
                       )}
                     </div>
                   </Grid>
@@ -353,7 +397,8 @@ export default function ContactSection() {
                           color:
                             activeName === "message"
                               ? "#C1FE00"
-                              : !hasError("message") && formState.values.message === ""
+                              : !hasError("message") &&
+                                formState.values.message === ""
                               ? "#f8f8f8"
                               : hasError("message")
                               ? "#FF603D"
@@ -382,7 +427,9 @@ export default function ContactSection() {
                         placeholder="Type something..."
                       />
                       {hasError("message") && (
-                        <div className="formValidationError">{formState.errors.message[0]}</div>
+                        <div className="formValidationError">
+                          {formState.errors.message[0]}
+                        </div>
                       )}
                     </div>
                   </Grid>
@@ -390,20 +437,26 @@ export default function ContactSection() {
                 <div className="contactSectionBtnContainer">
                   <div
                     className={
-                      !formState.isValid ? "contactSectionBtnDiv_Disable" : "contactSectionBtnDiv"
+                      !formState.isValid
+                        ? "contactSectionBtnDiv_Disable"
+                        : "contactSectionBtnDiv"
                     }
                   >
                     <button
                       disabled={formState.isValid ? false : true}
                       className={
-                        !formState.isValid ? "contactSectionBtn_Disable " : "contactSectionBtn"
+                        !formState.isValid
+                          ? "contactSectionBtn_Disable "
+                          : "contactSectionBtn"
                       }
                     >
                       Submit
                     </button>
                     <Arrow
                       className={
-                        !formState.isValid ? "contactSectionBtnImg_Disable" : "contactSectionBtnImg"
+                        !formState.isValid
+                          ? "contactSectionBtnImg_Disable"
+                          : "contactSectionBtnImg"
                       }
                     />
                   </div>
