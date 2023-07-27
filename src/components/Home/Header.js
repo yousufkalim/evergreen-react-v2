@@ -12,6 +12,11 @@ export default function Header() {
       {/* <div className='homeHeaderBgImageDiv'>
         <img className='homeHeaderBgImage' src={HeaderBG} />
       </div> */}
+      <div className="homeHeaderFloatingBtnDiv">
+        <button className="freelancer">Freelancer</button>
+        <button className="upwork"> Upwork</button>
+        <button className="fiverr">Fiverr</button>
+      </div>
       <div className="homeHeaderTextDiv">
         <h2 className="homeHeaderTitle">
           {/* Creating a better <br /> <span> IT solutions</span> */}

@@ -3,9 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 10%;
+  padding: 1% 5%;
   position: fixed;
-  background: transparent;
   /* box-shadow: 0px 5px 28px -2px rgba(0, 0, 0, 0.2); */
   z-index: 999999999;
 }
@@ -20,7 +19,7 @@
   width: 100%;
 }
 .navbarMenuContainer {
-  width: 65%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,19 +27,19 @@
 .navbarMenuDiv {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   list-style: none;
   color: #b7b7b7;
   font-weight: 500;
   font-size: 1.2rem;
-  gap: 2%;
 }
 .navbarMenuServiveDiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #b7b7b7;
+  gap: 5px;
   text-decoration: none;
 }
 .navbarMenuServiveDiv li {
@@ -56,6 +55,7 @@
 .navbarMenuServiveDropdown {
   position: relative;
   cursor: pointer;
+  padding-bottom: 1%;
 }
 #a {
   position: absolute;
@@ -199,16 +199,29 @@
 .navbarMenuLinks {
   color: #b7b7b7;
   text-decoration: none;
+  padding-bottom: 1%;
+  white-space: nowrap;
+}
+.navbarMenuactiveBorder {
+  color: #b7b7b7;
+  text-decoration: none;
+  border-bottom: 2px solid #c1fe00;
+  white-space: nowrap;
+  padding: 0 1% 1% 1%;
 }
 .gradient {
   padding: 1% 2%;
   border-radius: 100px;
   gap: 10px;
 
-  background: linear-gradient(90deg, rgba(193, 92, 255, 0.1) 0%, rgba(255, 84, 84, 0.1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(193, 92, 255, 0.1) 0%,
+    rgba(255, 84, 84, 0.1) 100%
+  );
 }
 #menuId {
-  color: #ffffff;
+  color: #b7b7b7;
   font-weight: 300;
   transition: 0.5s;
 }
@@ -228,9 +241,10 @@
   color: #ffffff;
 }
 #disableId {
-  color: #c1fe00;
+  color: #ffffff;
   transition: 0.5s;
-  font-weight: 6000;
+  font-weight: 600;
+  margin: 0 2%;
 }
 
 @media only screen and (max-width: 1660px) {
@@ -240,7 +254,7 @@
 }
 @media only screen and (max-width: 1366px) {
   .navbarMenuContainer {
-    width: 73%;
+    width: 70%;
   }
   .navbarButtonContainer {
     width: 12%;
@@ -248,8 +262,8 @@
 }
 @media only screen and (max-width: 1112px) {
   .navbarMenuDiv {
-    width: 70%;
-    font-size: 1rem;
+    /* width: 70%; */
+    font-size: 14px;
   }
 
   .navbarButton {
