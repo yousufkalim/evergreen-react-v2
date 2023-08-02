@@ -19,8 +19,8 @@ export default function AboutHeader() {
                 <span> Ever Green Soft?</span>
               </h2>
               <p>
-                We provide entrepreneurs and businesses with creative & innovative tools that
-                improves the way they do business.
+                We provide entrepreneurs and businesses with creative &
+                innovative tools that improves the way they do business.
               </p>
               {/* <Link to="/contactus" className="aboutHeaderBtnDiv">
                 <button className="aboutHeaderBtn">Get Started</button>
@@ -29,8 +29,16 @@ export default function AboutHeader() {
             </div>
           </Grid>
           <Grid className="aboutHeaderImgGrid" md={6}>
-            <img className="aboutHeaderWebImg" src={HeaderBG} />
-            <img className="aboutHeaderMobImg" src={HeaderMobBG} />
+            <img
+              className="aboutHeaderWebImg"
+              src={HeaderBG}
+              alt="background"
+            />
+            <img
+              className="aboutHeaderMobImg"
+              src={HeaderMobBG}
+              alt="mobileBG"
+            />
           </Grid>
         </Grid>
       </div>
