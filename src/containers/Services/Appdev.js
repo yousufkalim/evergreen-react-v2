@@ -16,6 +16,7 @@ export default function AppDev() {
       <div className="webDev_first_two_section">
         <ServiceHeader path="Service > App Development & design" title="App Development & design" />
         <AboutService
+          btnCssChange
           btntxt="Let's Talk"
           src={AboutServiceApp}
           title="We are Best App Development company"

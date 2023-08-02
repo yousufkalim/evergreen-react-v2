@@ -41,9 +41,7 @@ export default function Navbar() {
         <div className="navbarMenuContainer">
           <ul className="navbarMenuDiv">
             <Link
-              className={
-                menuRoute === "/" ? "navbarMenuactiveBorder" : "navbarMenuLinks"
-              }
+              className={menuRoute === "/" ? "navbarMenuactiveBorder" : "navbarMenuLinks"}
               to="/"
             >
               <li id={menuRoute === "/" ? "disableId" : "menuId"}>Home</li>
@@ -83,41 +81,18 @@ export default function Navbar() {
               </div>
               <div id="a">
                 <ul style={{ listStyle: "none" }}>
-                  <Link
-                    style={{ textDecoration: "none", color: "#b7b7b7" }}
-                    to="/webdevelopment"
-                  >
-                    <li
-                      id={
-                        menuRoute === "/webdevelopment" ? "disableId" : "menuId"
-                      }
-                    >
+                  <Link style={{ textDecoration: "none", color: "#b7b7b7" }} to="/webdevelopment">
+                    <li id={menuRoute === "/webdevelopment" ? "disableId" : "menuId"}>
                       Web Development
                     </li>
                   </Link>
-                  <Link
-                    style={{ textDecoration: "none", color: "#b7b7b7" }}
-                    to="/appdevelopment"
-                  >
-                    <li
-                      id={
-                        menuRoute === "/appdevelopment" ? "disableId" : "menuId"
-                      }
-                    >
+                  <Link style={{ textDecoration: "none", color: "#b7b7b7" }} to="/appdevelopment">
+                    <li id={menuRoute === "/appdevelopment" ? "disableId" : "menuId"}>
                       App Development
                     </li>
                   </Link>
-                  <Link
-                    style={{ textDecoration: "none", color: "#b7b7b7" }}
-                    to="/customsolutions"
-                  >
-                    <li
-                      id={
-                        menuRoute === "/customsolutions"
-                          ? "disableId"
-                          : "menuId"
-                      }
-                    >
+                  <Link style={{ textDecoration: "none", color: "#b7b7b7" }} to="/customsolutions">
+                    <li id={menuRoute === "/customsolutions" ? "disableId" : "menuId"}>
                       Sales & Marketing Solution
                     </li>
                   </Link>
@@ -131,28 +106,16 @@ export default function Navbar() {
               </li>
             </Link>
             <Link
-              className={
-                menuRoute === "/ourvalues"
-                  ? "navbarMenuactiveBorder"
-                  : "navbarMenuLinks"
-              }
+              className={menuRoute === "/ourvalues" ? "navbarMenuactiveBorder" : "navbarMenuLinks"}
               to="/ourvalues"
             >
-              <li id={menuRoute === "/ourvalues" ? "disableId" : "menuId"}>
-                Our Values
-              </li>
+              <li id={menuRoute === "/ourvalues" ? "disableId" : "menuId"}>Our Values</li>
             </Link>
             <Link
-              className={
-                menuRoute === "/about"
-                  ? "navbarMenuactiveBorder"
-                  : "navbarMenuLinks"
-              }
+              className={menuRoute === "/about" ? "navbarMenuactiveBorder" : "navbarMenuLinks"}
               to="/about"
             >
-              <li id={menuRoute === "/about" ? "disableId" : "menuId"}>
-                About
-              </li>
+              <li id={menuRoute === "/about" ? "disableId" : "menuId"}>About</li>
             </Link>
           </ul>
         </div>
@@ -227,41 +190,21 @@ export default function Navbar() {
                   }}
                 >
                   <Link className="navbarMobMenuLink" to="/webdevelopment">
-                    <ListItemText
-                      id={
-                        menuRoute === "/webdevelopment" ? "disableId" : "menuId"
-                      }
-                    >
-                      <div style={{ fontSize: "1.4rem", lineHeight: "100%" }}>
-                        {" "}
-                        WEB DEVELOPMENT
-                      </div>
+                    <ListItemText id={menuRoute === "/webdevelopment" ? "disableId" : "menuId"}>
+                      <div style={{ fontSize: "1.4rem", lineHeight: "100%" }}> WEB DEVELOPMENT</div>
                     </ListItemText>
                   </Link>
                 </ListItemButton>
                 <ListItemButton sx={{ pl: 6 }}>
                   <Link className="navbarMobMenuLink" to="/appdevelopment">
-                    <ListItemText
-                      id={
-                        menuRoute === "/appdevelopment" ? "disableId" : "menuId"
-                      }
-                    >
-                      <div style={{ fontSize: "1.4rem", lineHeight: "100%" }}>
-                        {" "}
-                        APP DEVELOPMENT
-                      </div>
+                    <ListItemText id={menuRoute === "/appdevelopment" ? "disableId" : "menuId"}>
+                      <div style={{ fontSize: "1.4rem", lineHeight: "100%" }}> APP DEVELOPMENT</div>
                     </ListItemText>
                   </Link>
                 </ListItemButton>
                 <ListItemButton sx={{ pl: 6 }}>
                   <Link className="navbarMobMenuLink" to="/customsolutions">
-                    <ListItemText
-                      id={
-                        menuRoute === "/customsolutions"
-                          ? "disableId"
-                          : "menuId"
-                      }
-                    >
+                    <ListItemText id={menuRoute === "/customsolutions" ? "disableId" : "menuId"}>
                       <div style={{ fontSize: "1.4rem", lineHeight: "100%" }}>
                         {" "}
                         Sales & Marketing Solution

@@ -55,6 +55,7 @@ export default function CustomSolution() {
           servicetitle="Our Values"
           btntxt="Let's Talk"
           to="/contactus"
+          btnCssChange
           disc="Discover the incredible potential of conversion-driven paid advertising as our expert Ever Green Soft Sales Whiz Team leverages their expertise to drive results. Experience a seamless journey from clicks to conversions, unlocking new levels of success for your business.
           "
         />{" "}
@@ -65,6 +66,7 @@ export default function CustomSolution() {
           btntxt="Let's Talk"
           to="/contactus"
           reverse
+          btnCssChange
           disc="With Grab Automation, you can take your LinkedIn strategy to the next level, ensuring seamless business growth. Experience the power of streamlining your success on LinkedIn and unlock its full potential for enhanced networking and lead generation. Let Grab Automation revolutionize your business effortlessly, automating your LinkedIn journey and delivering unmatched results.
           "
         />{" "}
@@ -74,6 +76,7 @@ export default function CustomSolution() {
           servicetitle="Our Values"
           btntxt="Let's Talk"
           to="/contactus"
+          btnCssChange
           disc={dataCustomSolution()}
         />{" "}
         <AboutService
@@ -83,6 +86,7 @@ export default function CustomSolution() {
           btntxt="Let's Talk"
           to="/contactus"
           reverse
+          btnCssChange
           disc="Email marketing automation is a powerful digital marketing strategy that streamlines and automates various aspects of the email marketing process. It involves using specialized software or tools to create, send, and manage personalized and targeted email campaigns, all while minimizing manual effort and maximizing efficiency"
         />
         <div />

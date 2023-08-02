@@ -12,18 +12,19 @@ export default function Header(props) {
       {floating && (
         <div className="homeHeaderFloatingBtnDiv">
           <button className="freelancer">Freelancer</button>
-          <button className="upwork"> Upwork</button>
+          <button className="upwork">Upwork</button>
           <button className="fiverr">Fiverr</button>
+          {/* <button className="whatsapp">Whatsapp</button>
+          <button className="facebook">Facebook</button>
+          <button className="linkedin">Linkedin</button> */}
         </div>
       )}
       <div className="homeHeaderTextDiv">
         <h2 className="homeHeaderTitle">
-          Amplify Your <br /> business's potential with <br /> Staff
-          augmentation
+          Amplify Your <br /> business's potential with <br /> Staff augmentation
         </h2>
         <p className="homeHeaderDesp">
-          Connect with EverGreenSoft's Sales Whiz for customized business
-          solutions.
+          Connect with EverGreenSoft's Sales Whiz for customized business solutions.
         </p>
         <Link to="/contactus" className="homeHeaderBtnDiv">
           <button className="homeHeaderBtn">Hire Talent free for 1 day </button>
