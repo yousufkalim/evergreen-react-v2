@@ -1,11 +1,9 @@
 // Init
 import { Grid } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
 // images
 import HeaderBG from "../../assets/Images/about_header_bg.svg";
 import HeaderMobBG from "../../assets/Images/about_mob_header_bg.svg";
-import { ReactComponent as Arrow } from "../../assets/Images/about_section_arrow.svg";
 // Component
 export default function AboutHeader() {
   return (
