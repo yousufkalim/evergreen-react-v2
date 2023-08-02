@@ -11,11 +11,15 @@ export default function AboutService(props) {
     <>
       <div
         //  className="aboutServiceContainer"
-        className={props.reverse ? "aboutServiceContainerReverse" : "aboutServiceContainer"}
+        className={
+          props.reverse
+            ? "aboutServiceContainerReverse"
+            : "aboutServiceContainer"
+        }
       >
         <div className="aboutServiceLeftDiv">
           <div className="aboutServiceImageDiv">
-            <img src={props.src || AboutServiceWeb} />
+            <img src={props.src || AboutServiceWeb} alt="about us" />
           </div>
         </div>
         <div className="aboutServiceRightDiv">
@@ -36,7 +40,9 @@ export default function AboutService(props) {
             <h2
               // className="aboutServiceSubTitle aboutServiceCustomSubTitle"
               className={
-                props.fontCssChange ? "aboutServiceSubTitle_fontchange" : "aboutServiceSubTitle"
+                props.fontCssChange
+                  ? "aboutServiceSubTitle_fontchange"
+                  : "aboutServiceSubTitle"
               }
             >
               {props.title || "We are Best Web Development company"}

@@ -1,7 +1,11 @@
 .aboutSectionContainer {
   width: 100%;
   display: flex;
-  background: linear-gradient(270deg, rgba(165, 215, 8, 1) 0%, rgba(216, 255, 94, 1) 100%),
+  background: linear-gradient(
+      270deg,
+      rgba(165, 215, 8, 1) 0%,
+      rgba(216, 255, 94, 1) 100%
+    ),
     rgba(0, 0, 0, 0.4);
 }
 .aboutSectionLeftDiv {
@@ -142,7 +146,7 @@
     font-size: 1.4rem;
   }
   .aboutSectionSubTitle {
-    font-size: 25px;
+    font-size: 36px;
   }
   .aboutSectionDesp {
     width: 80%;
