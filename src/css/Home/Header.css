@@ -1,7 +1,6 @@
 /* Header Component Style */
 .homeHeaderContainer {
-  background: url(../../assets/Images/background_effectV2.png),
-    rgba(30, 30, 30, 0.6);
+  background: url(../../assets/Images/background_effectV2.png), rgba(30, 30, 30, 0);
   background-blend-mode: hard-light, normal;
   background-size: cover;
   height: 100vh;
@@ -54,7 +53,7 @@
   background: #c1fe00;
   padding: 1%;
   border-radius: 40px;
-  margin: 3% 0 0 0;
+  margin: 3% 0 0.5% 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,8 +63,8 @@
   transition: 0.5s;
 }
 .homeHeaderBtnDiv:hover {
-  margin: 2.5% 0 0.5% 0;
-  background: #dcff68;
+  margin: 2.5% 0 1% 0;
+  /* background: #dcff68; */
 }
 .homeHeaderBtn {
   border: none;
@@ -91,7 +90,7 @@
 }
 .homeHeaderFloatingBtnDiv {
   position: fixed;
-  top: 80%;
+  top: 70% !important;
   left: 1.5%;
   transform: rotate(-90deg);
   transform-origin: left;
@@ -131,23 +130,25 @@
   }
   .homeHeaderBtnDiv {
     width: 22%;
-    margin: 2% 0 0 0;
+    margin: 3% 0 0.5% 0;
   }
   .homeHeaderDesp {
     font-size: 18px;
     margin-top: 2%;
   }
   .homeHeaderFloatingBtnDiv {
-    left: 1.7%;
+    left: 1.39%;
+    top: 82% !important;
   }
   .homeHeaderFloatingBtnDiv button {
     font-size: 18px;
-    padding: 12px 28px;
+    padding: 6px 25px;
   }
 }
 @media only screen and (max-width: 1366px) {
   .homeHeaderBtnDiv {
     width: 23%;
+    padding: 0.5% 0%;
   }
   .homeHeaderFloatingBtnDiv {
     top: 70%;
@@ -165,9 +166,9 @@
   .homeHeaderBtnDiv {
     width: 30%;
   }
-  .homeHeaderFloatingBtnDiv {
+  /* .homeHeaderFloatingBtnDiv {
     left: 2%;
-  }
+  } */
   .homeHeaderFloatingBtnDiv button {
     font-size: 14px;
   }
@@ -176,9 +177,9 @@
   .homeHeaderBtnDiv {
     width: 35%;
   }
-  .homeHeaderFloatingBtnDiv {
+  /* .homeHeaderFloatingBtnDiv {
     left: 2.3%;
-  }
+  } */
 }
 @media only screen and (max-width: 768px) {
   .homeHeaderFloatingBtnDiv {

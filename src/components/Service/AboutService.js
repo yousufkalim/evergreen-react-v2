@@ -11,11 +11,7 @@ export default function AboutService(props) {
     <>
       <div
         //  className="aboutServiceContainer"
-        className={
-          props.reverse
-            ? "aboutServiceContainerReverse"
-            : "aboutServiceContainer"
-        }
+        className={props.reverse ? "aboutServiceContainerReverse" : "aboutServiceContainer"}
       >
         <div className="aboutServiceLeftDiv">
           <div className="aboutServiceImageDiv">
@@ -40,9 +36,7 @@ export default function AboutService(props) {
             <h2
               // className="aboutServiceSubTitle aboutServiceCustomSubTitle"
               className={
-                props.fontCssChange
-                  ? "aboutServiceSubTitle_fontchange"
-                  : "aboutServiceSubTitle"
+                props.fontCssChange ? "aboutServiceSubTitle_fontchange" : "aboutServiceSubTitle"
               }
             >
               {props.title || "We are Best Web Development company"}
@@ -56,7 +50,11 @@ export default function AboutService(props) {
               React, Node.js, Vue.js, and Next.js for Custom Website Development.Elevate your
               digital presence with our exceptional team of experts */}
             </p>
-            <Link to={props.to} className="aboutServiceButtonDiv">
+            <Link
+              to={props.to}
+              // className="aboutServiceButtonDiv"
+              className={props.btnCssChange ? "aboutServiceButtonDiv_set" : "aboutServiceButtonDiv"}
+            >
               <button className="aboutServiceButton">{props.btntxt}</button>
               <Arrow color="#1e1e1e" />
             </Link>

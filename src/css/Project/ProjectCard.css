@@ -1,7 +1,6 @@
 .projectCardContainer {
   width: 100%;
   height: 100%;
-  /* margin-bottom: -8px; */
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -23,7 +22,7 @@
   background: linear-gradient(272deg, #a5d708 0%, #d8ff5e 100%);
   opacity: 0.9;
   height: 100%;
-  padding: 5%;
+  padding: 3% 5% 3% 5%;
   z-index: 1;
   transition: 0.5s;
   overflow: hidden;
@@ -33,7 +32,7 @@
   opacity: 1;
 }
 .projectCardTextDiv {
-  margin: 2% 0% 0% 0%;
+  margin: 0% 0% 0% 0%;
 }
 .projectCardNumberDiv {
   display: flex;
@@ -112,6 +111,10 @@
 @media only screen and (max-width: 1500px) {
   .projectCardBtnDiv {
     width: 30%;
+    margin: 6% 0 0 0;
+  }
+  .projectCardBtnDiv:hover {
+    margin: 4% 0 1% 0;
   }
 }
 @media only screen and (max-width: 1366px) {

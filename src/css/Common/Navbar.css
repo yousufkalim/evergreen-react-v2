@@ -225,11 +225,7 @@
   border-radius: 100px;
   gap: 10px;
 
-  background: linear-gradient(
-    90deg,
-    rgba(193, 92, 255, 0.1) 0%,
-    rgba(255, 84, 84, 0.1) 100%
-  );
+  background: linear-gradient(90deg, rgba(193, 92, 255, 0.1) 0%, rgba(255, 84, 84, 0.1) 100%);
 }
 #menuId {
   color: #b7b7b7;
