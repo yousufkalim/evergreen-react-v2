@@ -240,4 +240,8 @@
   .aboutServiceSubTitle {
     font-size: 1.2rem;
   }
+  .aboutServiceTextDiv {
+    width: 100%;
+    padding: 0 0% 0% 0%;
+  }
 }
