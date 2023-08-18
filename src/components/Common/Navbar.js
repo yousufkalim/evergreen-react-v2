@@ -53,7 +53,7 @@ export default function Navbar() {
                   menuRoute === "/webdevelopment" ||
                   menuRoute === "/appdevelopment" ||
                   menuRoute === "/customsolutions"
-                    ? "navbarMenuServiveBorder"
+                    ? "navbarMenuServiveColor"
                     : "navbarMenuServiveDiv"
                 }
               >
@@ -62,7 +62,7 @@ export default function Navbar() {
                     menuRoute === "/webdevelopment" ||
                     menuRoute === "/appdevelopment" ||
                     menuRoute === "/customsolutions"
-                      ? "disableId"
+                      ? "disableIdColor"
                       : "menuId"
                   }
                 >
@@ -73,7 +73,7 @@ export default function Navbar() {
                     menuRoute === "/webdevelopment" ||
                     menuRoute === "/appdevelopment" ||
                     menuRoute === "/customsolutions"
-                      ? "disableId"
+                      ? "disableIdColor"
                       : "menuId"
                   }
                   className="navbarMenuServiveIcon"
@@ -100,8 +100,16 @@ export default function Navbar() {
               </div>
             </div>
 
-            <Link className="navbarMenuLinks gradient" to="/project">
-              <li id={menuRoute === "/project" ? "disableId" : "gradientText"}>
+            <Link
+              className={
+                menuRoute === "/project"
+                  ? "navbarMenuactiveBorder_Gradient"
+                  : "navbarMenuLinks gradient"
+              }
+              // "navbarMenuLinks gradient"
+              to="/project"
+            >
+              <li id={menuRoute === "/project" ? "disableIdGradient" : "gradientText"}>
                 Hire Talent Scheme
               </li>
             </Link>

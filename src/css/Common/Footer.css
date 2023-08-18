@@ -34,7 +34,7 @@
   width: 30%;
   display: flex;
   justify-content: space-between;
-  /* background-color: #c1fe00; */
+  /* background-color: #83FD9E; */
 }
 .footerMenuDiv {
   line-height: 170%;
@@ -56,7 +56,7 @@
 }
 .footerLinks:hover {
   padding: 0 0 0 5px;
-  color: #c1fe00;
+  color: #83fd9e;
 }
 .footerMenuDiv p {
   color: #fbfbfb;
@@ -72,7 +72,7 @@
   color: #fbfbfb;
 }
 .footerCopyRightDiv p span {
-  color: #c1fe00;
+  color: #83fd9e;
 }
 .footerSocialDiv {
   display: flex;
@@ -212,7 +212,7 @@
   .footerDivider {
     height: 1px;
     width: 100%;
-    background: #c1fe00;
+    background: #83fd9e;
     margin: 2% 0;
   }
 }

@@ -1,8 +1,7 @@
 .aboutSectionContainer {
   width: 100%;
   display: flex;
-  background: linear-gradient(270deg, rgba(165, 215, 8, 1) 0%, rgba(216, 255, 94, 1) 100%),
-    rgba(0, 0, 0, 0.4);
+  background: var(--linear-primary, linear-gradient(90deg, #1aa37a 0%, #9dffb3 100%));
   padding: 2% 0%;
 }
 .aboutSectionLeftDiv {

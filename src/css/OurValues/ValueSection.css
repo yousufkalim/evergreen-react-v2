@@ -59,17 +59,17 @@
 .valuesSectionSubTitleDivider {
   height: 3px;
   width: 10%;
-  background: #c1fe00;
+  background: #83fd9e;
   margin-right: 1%;
 }
 .valuesSectionSubTitleDividerReverse {
   height: 3px;
   width: 10%;
-  background: #c1fe00;
+  background: #83fd9e;
   margin-right: 1%;
 }
 .valuesSectionSubTitle {
-  color: #c1fe00;
+  color: #83fd9e;
   font-size: 22px;
   font-weight: 600;
 }

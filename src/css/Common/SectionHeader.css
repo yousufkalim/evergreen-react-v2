@@ -8,7 +8,7 @@
   padding-top: 3%;
 }
 .sectionHeaderContainer p {
-  color: #c1fe00;
+  color: #83fd9e;
   font-weight: 600;
   font-size: 22px;
 }
@@ -20,7 +20,7 @@
   padding: 0.5% 0;
 }
 .sectionHeaderContainer h2 span {
-  color: #c1fe00;
+  color: #83fd9e;
   font-weight: 500;
   font-size: 48px;
 }
@@ -35,7 +35,7 @@
   height: 3px;
   width: 2%;
   margin-right: 1%;
-  background: #c1fe00;
+  background: #83fd9e;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -44,7 +44,7 @@
     font-size: 25px;
   }
   .sectionHeaderContainer h2 span {
-    color: #c1fe00;
+    color: #83fd9e;
     font-size: 25px;
   }
   .sectionHeaderContainer p {

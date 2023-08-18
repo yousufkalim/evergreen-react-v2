@@ -1,7 +1,7 @@
 // Init
 import React from "react";
 // images
-import Logo from "../../assets/Images/navbar_logo.svg";
+import Logo from "../../assets/Images/navbar_logoV2.svg";
 import FacebookIcon from "../../assets/Images/footer_facebook_icon.svg";
 import TwitterIcon from "../../assets/Images/footer_twitter_icon.svg";
 import LinkedinIcon from "../../assets/Images/footer_linkedin_icon.svg";
