@@ -219,6 +219,7 @@ export default function ContactSection() {
                         Name
                       </label>
                       <input
+                        autocomplete="off"
                         maxLength="64"
                         name="name"
                         onChange={handleChange}
@@ -258,6 +259,7 @@ export default function ContactSection() {
                         Company
                       </label>
                       <input
+                        autocomplete="off"
                         name="company"
                         maxLength="60"
                         value={formState.values.company}
@@ -296,6 +298,7 @@ export default function ContactSection() {
                         Email
                       </label>
                       <input
+                        autocomplete="off"
                         maxLength="60"
                         name="email"
                         value={formState.values.email}
@@ -334,6 +337,7 @@ export default function ContactSection() {
                         Phone
                       </label>
                       <input
+                        autocomplete="off"
                         name="phone"
                         value={formState.values.phone}
                         maxLength="13"
