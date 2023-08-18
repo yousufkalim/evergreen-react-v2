@@ -34,7 +34,7 @@ export default function ContactSection() {
       // message: 'must start with 0',
       length: {
         minimum: 3,
-        // message: 'must be atleast 3 characters long',
+        message: "atleast 3 characters",
         // maximum: 40,
       },
     },
@@ -44,7 +44,7 @@ export default function ContactSection() {
       length: {
         minimum: 10,
 
-        message: "number must be atleast 10 digits long",
+        message: "atleast 10 digits long",
       },
     },
     company: {
@@ -57,7 +57,7 @@ export default function ContactSection() {
       presence: { allowEmpty: false, message: "is required" },
       email: {
         attribute: "true",
-        message: "must be in this format (name@domain.com)",
+        message: "format (name@domain.com)",
       },
 
       length: {
