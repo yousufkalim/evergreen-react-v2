@@ -2,6 +2,7 @@
 import React from "react";
 // images
 import AboutServiceWeb from "../../assets/Images/about_service_web.svg";
+
 import { ReactComponent as Arrow } from "../../assets/Images/about_section_arrow.svg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";

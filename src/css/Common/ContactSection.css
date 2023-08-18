@@ -31,7 +31,7 @@
   flex-direction: column;
 }
 .contactSectionHeaderDiv h2 {
-  color: #c1fe00;
+  color: #83fd9e;
   font-weight: 500;
   font-size: 48px;
 }
@@ -122,18 +122,18 @@
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 1px solid #c1fe00;
+  border-bottom: 1px solid #83fd9e;
   font-size: 1.2rem;
   letter-spacing: 0.5;
   opacity: 0.8;
-  color: #c1fe00;
+  color: #83fd9e;
   resize: none;
 }
 .contactSectionFormInputDiv textarea:focus {
   outline-style: none;
 }
 .contactSectionFormInputDiv textarea::placeholder {
-  color: #c1fe00;
+  color: #83fd9e;
 }
 .contactSectionFormInputDiv input {
   background: transparent;
@@ -141,15 +141,15 @@
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 1px solid #c1fe00;
+  border-bottom: 1px solid #83fd9e;
   font-size: 1.2rem;
   letter-spacing: 0.5;
   margin-bottom: 2%;
-  color: #c1fe00;
+  color: #83fd9e;
   opacity: 0.8;
 }
 .contactSectionFormInputDiv input::placeholder {
-  color: #c1fe00;
+  color: #83fd9e;
 }
 .contactSectionFormInputDiv input:focus {
   outline-style: none;
@@ -168,9 +168,9 @@
   padding: 1% 3%;
   transition: 0.5s;
   cursor: pointer;
-  border: 3px solid #c1fe00;
+  border: 3px solid #83fd9e;
   margin: 1% 0 0 0;
-  background-color: #c1fe00;
+  background-color: #83fd9e;
 }
 .contactSectionBtnDiv_Disable {
   width: 25%;
@@ -179,7 +179,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1% 3%;
-  border: 3px solid #c1fe00;
+  border: 3px solid #83fd9e;
 }
 .contactSectionBtn {
   width: 80%;
@@ -210,7 +210,7 @@
   color: #ffffff;
 }
 .contactSectionBtnDiv:hover {
-  background: #c1fe00;
+  background: #83fd9e;
   margin: 0 0 1% 0;
 }
 .contactSectionBtnDiv:hover .contactSectionBtn {
@@ -425,10 +425,10 @@ textarea::placeholder {
     margin-bottom: 3%;
   }
   .contactSectionBtnDiv {
-    width: 40%;
+    width: 50%;
   }
   .contactSectionBtnDiv_Disable {
-    width: 40%;
+    width: 50%;
   }
   .contactSectionHeaderDiv p {
     width: 90%;

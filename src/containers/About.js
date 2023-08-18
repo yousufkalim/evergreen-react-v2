@@ -33,7 +33,7 @@ export default function About() {
       <AboutSection
         fullImg
         bgColor="#1E1E1E"
-        titleColor="#C1FE00"
+        titleColor="#83FD9E"
         subTitleColor="#FBFBFB"
         despColor="#B7B7B7"
         src={AboutUs}

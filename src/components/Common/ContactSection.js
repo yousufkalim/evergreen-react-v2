@@ -208,7 +208,7 @@ export default function ContactSection() {
                         style={{
                           color:
                             activeName === "name"
-                              ? "#C1FE00"
+                              ? "#83FD9E"
                               : !hasError("name") && formState.values.name === ""
                               ? "#f8f8f8"
                               : hasError("name")
@@ -229,10 +229,10 @@ export default function ContactSection() {
                         style={{
                           borderBottom:
                             activeName === "name"
-                              ? "1px solid #C1FE00"
+                              ? "1px solid #83FD9E"
                               : hasError("name")
-                              ? "1px solid #C1FE00"
-                              : "1px solid #C1FE00",
+                              ? "1px solid #83FD9E"
+                              : "1px solid #83FD9E",
                         }}
                         placeholder="Your Name"
                       />
@@ -247,7 +247,7 @@ export default function ContactSection() {
                         style={{
                           color:
                             activeName === "company"
-                              ? "#C1FE00"
+                              ? "#83FD9E"
                               : !hasError("company") && formState.values.company === ""
                               ? "#f8f8f8"
                               : hasError("company")
@@ -267,10 +267,10 @@ export default function ContactSection() {
                         style={{
                           borderBottom:
                             activeName === "company"
-                              ? "1px solid #C1FE00"
+                              ? "1px solid #83FD9E"
                               : hasError("company")
-                              ? "1px solid #C1FE00"
-                              : "1px solid #C1FE00",
+                              ? "1px solid #83FD9E"
+                              : "1px solid #83FD9E",
                         }}
                         placeholder="Your Company"
                       />
@@ -285,7 +285,7 @@ export default function ContactSection() {
                         style={{
                           color:
                             activeName === "email"
-                              ? "#C1FE00"
+                              ? "#83FD9E"
                               : !hasError("email") && formState.values.email === ""
                               ? "#f8f8f8"
                               : hasError("email")
@@ -305,10 +305,10 @@ export default function ContactSection() {
                         style={{
                           borderBottom:
                             activeName === "email"
-                              ? "1px solid #C1FE00"
+                              ? "1px solid #83FD9E"
                               : hasError("email")
-                              ? "1px solid #C1FE00"
-                              : "1px solid #C1FE00",
+                              ? "1px solid #83FD9E"
+                              : "1px solid #83FD9E",
                         }}
                         placeholder="acb@xyz.com"
                       />
@@ -323,7 +323,7 @@ export default function ContactSection() {
                         style={{
                           color:
                             activeName === "phone"
-                              ? "#C1FE00"
+                              ? "#83FD9E"
                               : !hasError("phone") && formState.values.phone === ""
                               ? "#f8f8f8"
                               : hasError("phone")
@@ -350,10 +350,10 @@ export default function ContactSection() {
                         style={{
                           borderBottom:
                             activeName === "phone"
-                              ? "1px solid #C1FE00"
+                              ? "1px solid #83FD9E"
                               : hasError("phone")
-                              ? "1px solid #C1FE00"
-                              : "1px solid #C1FE00",
+                              ? "1px solid #83FD9E"
+                              : "1px solid #83FD9E",
                         }}
                         placeholder="Enter Number"
                       />
@@ -368,7 +368,7 @@ export default function ContactSection() {
                         style={{
                           color:
                             activeName === "message"
-                              ? "#C1FE00"
+                              ? "#83FD9E"
                               : !hasError("message") && formState.values.message === ""
                               ? "#f8f8f8"
                               : hasError("message")
@@ -389,10 +389,10 @@ export default function ContactSection() {
                         style={{
                           borderBottom:
                             activeName === "message"
-                              ? "1px solid #C1FE00"
+                              ? "1px solid #83FD9E"
                               : hasError("message")
-                              ? "1px solid #C1FE00"
-                              : "1px solid #C1FE00",
+                              ? "1px solid #83FD9E"
+                              : "1px solid #83FD9E",
                         }}
                         rows={1}
                         placeholder="Type something..."
